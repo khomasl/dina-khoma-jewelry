@@ -1,28 +1,22 @@
-import './global.css'
+import '../styles/global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
-import { baseUrl } from './utils/sitemap'
-import Navbar from './components/nav'
-import Footer from './components/footer'
+import { baseUrl } from '../utils/sitemap'
+import Navbar from '../components/nav'
+import Footer from '../components/footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
+  icons: "/favicon.ico",
   title: {
     default: 'Dina Khoma Jewelry',
     template: '%s | Dina Khoma Jewelry',
   },
   description: 'This is Dina Khoma site.',
-  // alternates: {
-    //   canonical: "/app/assets/images/favicon.ico"
-    // },
-  // icons: {
-      //   icon: "/app/assets/images/favicon.ico"
-      // },
-  // icons: "/favicon.ico",
   openGraph: {
     title: 'Dina Khoma Site',
     description: 'This is Dina Khoma site.',
@@ -30,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Dina Khoma Site',
     locale: 'uk_UA',
     type: 'website',
-    images: ["/app/assets/images/logo/logo_300x100.png"]
+    // images: ["/logo.png"]
   },
   robots: {
     index: true,
@@ -61,11 +55,7 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="32x32"/>
-      </head>
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-[1000px] px-20px mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
