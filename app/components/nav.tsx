@@ -4,22 +4,22 @@ import logo from '../assets/images/logo/logo_300x100.png'
 
 const navItems = {
   '/': {
-    name: 'home',
+    name: 'Про мене',
   },
-  '/blog': {
-    name: 'blog',
+  '/collections': {
+    name: 'Moї вироби',
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
+  '/contacts': {
+    name: 'Контакти',
   },
 }
 
 export default function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
+    <aside className="ml-[8px] mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row items-start justify-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
           <Image
@@ -33,7 +33,7 @@ export default function Navbar() {
               marginRight: "auto"
             }}
           />
-          <div className="flex flex-row space-x-0 pr-10">
+          <div className="w-full flex flex-row space-x-0 ml-10">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
