@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     template: '%s | Dina Khoma Jewelry',
   },
   description: 'This is Dina Khoma site.',
+  alternates: {
+    canonical: "/app/assets/images/favicon.ico"
+  },
+  icons: {
+    icon: "/app/assets/images/favicon.ico"
+  },
   openGraph: {
     title: 'Dina Khoma Site',
     description: 'This is Dina Khoma site.',
@@ -53,6 +59,9 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        {/* <link rel="icon" href="/app/assets/images/favicon.ico" /> */}
+      </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
