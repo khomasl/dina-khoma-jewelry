@@ -1,7 +1,6 @@
 // import { getBlogPosts } from 'app/blog/utils'
 
 export const baseUrl = 'https://dina-khoma-jewelry.vercel.app'
-// export const baseUrl = 'http://localhost:3000'
 
 export default async function sitemap() {
   // let blogs = getBlogPosts().map((post) => ({
@@ -18,5 +17,5 @@ export default async function sitemap() {
   return [
     ...routes, 
     // ...blogs
-]
+  ]
 }
