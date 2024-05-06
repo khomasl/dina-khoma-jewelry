@@ -11,8 +11,19 @@ This is a Dina Khoma site. Includes:
 - Vercel Speed Insights / Web Analytics
 - Geist font
 
+## How to Use
+Clone
+
+```bash
+git clone https://github.com/khomasl/dina-khoma-jewelry.git
+```
+
 Then, run Next.js in development mode:
 
 ```bash
 npm run dev
 ```
+
+## Demo
+  - On Vercel  - https://dina-khoma-jewelry.vercel.app
+  - On Netlify - https://dina-khoma-jewelry.netlify.app
