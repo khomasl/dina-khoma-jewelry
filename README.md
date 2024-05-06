@@ -16,6 +16,7 @@ Clone
 
 ```bash
 git clone https://github.com/khomasl/dina-khoma-jewelry.git
+cd dina-khoma-jewelry
 ```
 
 Then, run Next.js in development mode:

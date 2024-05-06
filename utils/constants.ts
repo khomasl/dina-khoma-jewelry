@@ -33,8 +33,7 @@ const CONTENT = {
       key: "hero",
       header: "",
       title: "Доповніть свій стиль унікальними прикрасами ручної роботи",
-      description:
-        "Відкрийте для себе світ елегантності та стилю з унікальними прикрасами ручної роботи. Доведена до досконалості, кожна прикраса є свідченням майстерності та індивідуальності.",
+      description: "Відкрийте для себе світ елегантності та стилю з унікальними прикрасами ручної роботи. Доведена до досконалості, кожна прикраса є свідченням майстерності та індивідуальності.",
       button: {
         title: "Купити",
         link: INSTAGRAM_URL,
@@ -44,19 +43,19 @@ const CONTENT = {
 
     {
       key: "slider",
-      slider: [
-        "current/1.png",
-        "current/2.png",
-        "current/3.png",
-        "current/4.png",
-        "other/1.png",
-        "other/2.png",
-        "other/3.png",
-        "other/4.png",
-        "other/5.png",
-        "other/6.png",
-        "other/7.png",
-        "other/8.png",
+      items: [
+        {img: "current/1.png"},
+        {img: "current/2.png"},
+        {img: "current/3.png"},
+        {img: "current/4.png"},
+        {img: "other/1.png"},
+        {img: "other/2.png"},
+        {img: "other/3.png"},
+        {img: "other/4.png"},
+        {img: "other/5.png"},
+        {img: "other/6.png"},
+        {img: "other/7.png"},
+        {img: "other/8.png"},
       ],
     },
 
@@ -64,12 +63,17 @@ const CONTENT = {
       key: "aboutMe",
       header: "ПРО МЕНЕ",
       title: "Майстерність поєднується з елегантністю",
-      description:
-        "Кожен виріб виготовлено вручну, поєднуючи традиції та сучасність. Відчуйте розкіш моїх ексклюзивних колекцій.",
-      details: {
-        clients: "КЛІЄНТІВ",
-        products: "ВИРОБІВ",
-      },
+      description: "Кожен виріб виготовлено вручну, поєднуючи традиції та сучасність. Відчуйте розкіш моїх ексклюзивних колекцій.",
+      items: [ 
+        {
+          title: "1209+",
+          description: "КЛІЄНТІВ",
+        },
+        {
+          title: "150+",
+          description: "ВИРОБІВ",
+        }
+      ],
       button: {
         title: "Дивитись колекцію",
         link: INSTAGRAM_URL,
@@ -93,7 +97,7 @@ const CONTENT = {
       key: "currentCollections",
       header: "МОЇ ВИРОБИ",
       title: "Найостанніші колекції",
-      products: [
+      items: [
         {
           title: "",
           description: "",
@@ -125,30 +129,30 @@ const CONTENT = {
       key: "feedback",
       header: "ВІДГУКИ",
       title: "Що кажуть клієнти",
-      slides: [
+      items: [
         {
-          name: "",
-          text: "",
+          title: "",
+          description: "",
           img: "feedback/1.png",
         },
         {
-          name: "",
-          text: "",
+          title: "",
+          description: "",
           img: "feedback/2.png",
         },
         {
-          name: "",
-          text: "",
+          title: "",
+          description: "",
           img: "feedback/3.png",
         },
         {
-          name: "",
-          text: "",
+          title: "",
+          description: "",
           img: "feedback/4.png",
         },
         {
-          name: "",
-          text: "",
+          title: "",
+          description: "",
           img: "feedback/5.png",
         },
       ],
@@ -158,7 +162,7 @@ const CONTENT = {
       key: "otherCollections",
       header: "МОЇ ВИРОБИ",
       title: "Різні вироби",
-      products: [
+      items: [
         {
           title: "",
           description: "",
@@ -214,8 +218,7 @@ const CONTENT = {
   footer: {
     logo: {
       title: "Dina Khoma",
-      description:
-        "Відкрийте для себе світ елегантності та стилю з моїми унікальними прикрасами ручної роботи. Доведена  до досконалості, кожна прикраса є свідченням майстерності та індивідуальності.",
+      description: "Відкрийте для себе світ елегантності та стилю з моїми унікальними прикрасами ручної роботи. Доведена  до досконалості, кожна прикраса є свідченням майстерності та індивідуальності.",
     },
     info: {
       title: "Інформація",
@@ -269,8 +272,7 @@ const CONTENT = {
     },
     promo: {
       title: "Отримайте знижку 15%",
-      description:
-        "Відправте промокод в Direct Instagram і отримайте знижку на своє перше замовлення",
+      description: "Відправте промокод в Direct Instagram і отримайте знижку на своє перше замовлення",
       code: "prm-dina-15",
     },
   },
