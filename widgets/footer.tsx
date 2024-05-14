@@ -10,11 +10,11 @@ const {logo, info, myContacts, mySocials, promo} = CONTENT.footer;
     return (
       <footer className="w-full bg-[#74538E] py-16 px-20">
         <div className="flex justify-between gap-3 pb-6">
-          <div className='max-w-56'>
+          <div className='hidden md:block max-w-56'>
             <h5 className="text-xl font-bold mb-2">{logo.title}</h5>
             <p>{logo.description}</p>
           </div>
-          <div className='text-xl max-w-56'>
+          <div className='hidden md:block text-xl max-w-56'>
             <h5 className='text-xl font-bold mb-2'>{info.title}</h5>
             <>
               {info.nav.map((item) => (
@@ -53,7 +53,7 @@ const {logo, info, myContacts, mySocials, promo} = CONTENT.footer;
               ))}
           </div>
         </div>
-        <div className="flex justify-between gap-3 items-center">
+        <div className="flex flex-col md:flex-row justify-between gap-3 items-center">
           <div>
             <h5 className="text-xl font-bold mb-2">{mySocials.title}</h5>
             <div className='flex '>
@@ -81,11 +81,13 @@ const {logo, info, myContacts, mySocials, promo} = CONTENT.footer;
               })}
             </div>
           </div>
-          <div className='flex gap-8 items-center border border-[#603813] rounded-md bg-gradient-to-b from-[#6A00A6] from-20% to-[#74538E] px-5 py-3'>
+          <div className='flex flex-col lg:flex-row gap-4 items-center border border-[#603813] rounded-md bg-gradient-to-b from-[#6A00A6] from-20% to-[#74538E] px-5 py-3'>
               <h5 className='text-xl font-bold'>{promo.title}</h5>
-              <p className='max-w-72 text-2xl'>{promo.description}</p>
-              <div className='text-2xl border border-[#A49898] rounded-md p-2'>
-                {promo.code}
+              <div className='flex gap-4 items-center '>
+                <p className='max-w-72 text-l md:text-2xl'>{promo.description}</p>
+                <div className='text-l md:text-2xl border border-[#A49898] rounded-md p-2'>
+                  {promo.code}
+                </div>
               </div>
           </div>
         </div>
