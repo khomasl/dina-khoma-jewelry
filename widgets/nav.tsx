@@ -42,7 +42,7 @@ export default function Navbar() {
               height: "auto",
             }}
           />
-          <div className="flex flex-row space-x-1 ml-5">
+          <div className="hidden md:flex flex-row space-x-1 ml-5">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
@@ -55,7 +55,7 @@ export default function Navbar() {
               )
             })}
           </div>
-          <div className="flex flex-row space-x-1 ml-5">
+          <div className="hidden md:flex flex-row space-x-1 ml-5">
             {socials.map((social, idx) => {
               return (
                 <Link
@@ -88,10 +88,15 @@ export default function Navbar() {
           <Link
             key={phone.title}
             href={`tel:${phone.link}`}
-            className="text-3xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+            className="hidden md:block text-3xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
           >
             {phone.title}
           </Link>
+          <div className='flex md:hidden flex-col justify-between w-8 h-8'>
+            <div className='border border-b'></div>
+            <div className='border border-b'></div>
+            <div className='border border-b'></div>
+          </div>
         </nav>
       </div>
     </aside>
