@@ -1,7 +1,9 @@
+"use client";
+
 import Link from 'next/link'
 import Image from 'next/image'
 // import {Svg} from 'next'
-// import logo from '../public/logo.png'
+import srcLogo from '../public/logo.png'
 import Instagram from '../public/svg/instagram.svg'
 import Facebook from '../public/svg/facebook.svg'
 import Telegram from '../public/svg/telegram.svg'
