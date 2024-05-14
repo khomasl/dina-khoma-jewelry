@@ -6,26 +6,32 @@ const EMAIL = "KhomaDina@gmail.com";
 
 const CONTENT = {
   header: {
-    logo: "logo.png",
+    logo: {
+      src: "logo.png",
+      title: "Dina Khoma Jewelry Logo"
+    },
     nav: ["Про мене", "Мої вироби", "Відгуки"],
     socials: [
       {
+        src: "instagram.svg",
         title: "Instagram",
         link: INSTAGRAM_URL,
       },
       {
+        src: "facebook.svg",
         title: "Facebook",
         link: FACEBOOK_URL,
       },
       {
+        src: "telegram.svg",
         title: "Telegram",
         link: TELEGRAM_URL,
       },
-      {
-        title: "093 107 08 51",
-        link: PHONE_NUMBER,
-      },
     ],
+    phone: {
+      title: "093 107 08 51",
+      link: PHONE_NUMBER,
+    },
   },
 
   main: [
@@ -38,24 +44,24 @@ const CONTENT = {
         title: "Купити",
         link: INSTAGRAM_URL,
       },
-      img: "hero.png",
+      src: "hero.jpg",
     },
 
     {
       key: "slider",
       items: [
-        {img: "current/1.png"},
-        {img: "current/2.png"},
-        {img: "current/3.png"},
-        {img: "current/4.png"},
-        {img: "other/1.png"},
-        {img: "other/2.png"},
-        {img: "other/3.png"},
-        {img: "other/4.png"},
-        {img: "other/5.png"},
-        {img: "other/6.png"},
-        {img: "other/7.png"},
-        {img: "other/8.png"},
+        {src: "current/1.jpg"},
+        {src: "current/2.jpg"},
+        {src: "current/3.jpg"},
+        {src: "current/4.jpg"},
+        {src: "other/1.jpg"},
+        {src: "other/2.jpg"},
+        {src: "other/3.jpg"},
+        {src: "other/4.jpg"},
+        {src: "other/5.jpg"},
+        {src: "other/6.jpg"},
+        {src: "other/7.jpg"},
+        {src: "other/8.jpg"},
       ],
     },
 
@@ -78,7 +84,7 @@ const CONTENT = {
         title: "Дивитись колекцію",
         link: INSTAGRAM_URL,
       },
-      img: "about.png",
+      src: "about.jpg",
     },
 
     {
@@ -90,7 +96,7 @@ const CONTENT = {
         title: "Дізнатись більше",
         link: INSTAGRAM_URL,
       },
-      img: "features.png",
+      src: "features.jpg",
     },
 
     {
@@ -102,25 +108,25 @@ const CONTENT = {
           title: "",
           description: "",
           price: "",
-          img: "current/1.png",
+          src: "1.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "current/2.png",
+          src: "2.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "current/3.png",
+          src: "3.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "current/4.png",
+          src: "4.jpg",
         },
       ],
     },
@@ -133,27 +139,27 @@ const CONTENT = {
         {
           title: "",
           description: "",
-          img: "feedback/1.png",
+          src: "1.jpg",
         },
         {
           title: "",
           description: "",
-          img: "feedback/2.png",
+          src: "2.jpg",
         },
         {
           title: "",
           description: "",
-          img: "feedback/3.png",
+          src: "3.jpg",
         },
         {
           title: "",
           description: "",
-          img: "feedback/4.png",
+          src: "4.jpg",
         },
         {
           title: "",
           description: "",
-          img: "feedback/5.png",
+          src: "5.jpg",
         },
       ],
     },
@@ -167,49 +173,49 @@ const CONTENT = {
           title: "",
           description: "",
           price: "",
-          img: "other/1.png",
+          src: "1.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/2.png",
+          src: "2.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/3.png",
+          src: "3.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/4.png",
+          src: "4.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/5.png",
+          src: "5.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/6.png",
+          src: "6.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/7.png",
+          src: "7.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          img: "other/8.png",
+          src: "8.jpg",
         },
       ],
     },
