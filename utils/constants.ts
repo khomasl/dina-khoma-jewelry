@@ -234,22 +234,27 @@ const CONTENT = {
       title: "Деталі для контакту",
       contacts: [
         {
+          src: "instagram-line.svg",
           title: "@dinakhoma",
           link: INSTAGRAM_URL,
         },
         {
+          src: "facebook-line.svg",
           title: "Dina Khoma",
           link: FACEBOOK_URL,
         },
         {
+          src: "telegram-line.svg",
           title: "@dina_khoma",
           link: TELEGRAM_URL,
         },
         {
+          src: "phone-line.svg",
           title: "093 107 08 51",
           link: PHONE_NUMBER,
         },
         {
+          src: "email-line.svg",
           title: "KhomaDina@gmail.com",
           link: EMAIL,
         },
@@ -259,20 +264,19 @@ const CONTENT = {
       title: "Мої соціальні мережі",
       socials: [
         {
+          src: "instagram.svg",
           title: "Instagram",
           link: INSTAGRAM_URL,
         },
         {
+          src: "facebook.svg",
           title: "Facebook",
           link: FACEBOOK_URL,
         },
         {
+          src: "telegram.svg",
           title: "Telegram",
           link: TELEGRAM_URL,
-        },
-        {
-          title: "093 107 08 51",
-          link: PHONE_NUMBER,
         },
       ],
     },
