@@ -26,10 +26,10 @@ const navItems = {
 
 export default function Navbar() {
   return (
-    <aside className="ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20 w-full">
+    <aside className="border-b w-full py-4 px-[120px] tracking-tight">
+      <div className="max-w-[1440px] lg:sticky lg:top-20">
         <nav
-          className="border-b flex flex-row items-center justify-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="w-full flex flex-row items-center justify-between relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
           <Image

@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-      <section className="px-5">
+      <section className="px-[120px] py-5">
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
           Dina Khoma Jewelry
         </h1>
