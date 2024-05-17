@@ -1,12 +1,11 @@
-import { Main } from "@/widgets";
+import {HeroSection} from "@/widgets";
+import {CONTENT} from "@/shared/constants";
+import {match} from "ts-pattern";
 
 export default function Page() {
-    return (
-      <section className="px-5">
-        <Main />
-        <div className="my-8">
-          {/* <BlogPosts /> */}
-        </div>
-      </section>
-    )
+    return CONTENT.main.map(item =>
+        match(item)
+            .with({type: "hero"}, (section) => <HeroSection section={section} />)
+            .otherwise(() => null)
+        )
   }

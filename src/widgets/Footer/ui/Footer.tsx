@@ -38,8 +38,8 @@ export default function Footer() {
                 >
                   <Image
                       alt={contact.title}
-                      // src={require(`/public/svg/${contact.src}?url`)}
-                      src={require(`/public/svg/facebook-line.svg?url`)}
+                      src={require(`/public/svg/${contact.src}?url`)}
+                      // src={require(`/public/svg/facebook-line.svg?url`)}
                       width={16}
                       height={16}
                       style={{
@@ -66,15 +66,15 @@ export default function Footer() {
                   >
                     <Image
                       alt={social.title}
-                      // src={require(`/public/svg/${social.src}?url`)}
-                      src={require(`/public/svg/facebook.svg?url`)}
+                      src={require(`/public/svg/${social.src}?url`)}
+                      // src={require(`/public/svg/facebook.svg?url`)}
                       width={50}
                       height={50}
                       style={{
                         maxWidth: "100%",
                         height: "auto",
                       }}
-                      // unoptimized 
+                      // unoptimized
                     />
                   </Link>
                 )

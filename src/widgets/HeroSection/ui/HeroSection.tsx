@@ -10,6 +10,7 @@ type Props = {
 }
 
 const HeroSection: FC<Props> = ({section}) => {
+
   return (
     <div className="w-full relative">
       <div className="absolute w-full h-full -z-10 overflow-hidden">
