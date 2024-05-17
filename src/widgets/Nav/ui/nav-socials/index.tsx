@@ -11,24 +11,18 @@ const Socials = () => (
         <Link
           key={social.title}
           href={social.link}
-          className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative mr-2.5"
+          className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative px-1"
         >
           <>
-            {/* {idx===0 && <Instagram />} */}
-            {/* {idx===1 && <Facebook />} */}
-            {/* {idx===2 && <Telegram className="hover:bg-red-400 hover:stroke-red-100" */}
-            {/* />} */}
             <Image
               alt={social.title}
               src={require(`/public/svg/${social.src}?url`)}
-              // src={instagramUrl}
               width={50}
               height={50}
               style={{
                 maxWidth: "100%",
                 height: "auto",
               }}
-              // unoptimized
             />
           </>
         </Link>

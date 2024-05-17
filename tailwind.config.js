@@ -6,7 +6,6 @@ module.exports = {
     hoverOnlyWhenSupported: true,
   },
   theme: {
-    
     extend: {
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
@@ -21,7 +20,7 @@ module.exports = {
           400: '#74538E',
           500: '#6A00A6'
         },
-        'brown': '#6038130',
+        'brown': '#603813',
         'gray': '#A49898',
       },
     }
