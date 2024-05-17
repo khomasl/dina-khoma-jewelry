@@ -9,14 +9,14 @@ const {logo, info, myContacts, mySocials, promo} = CONTENT.footer;
 
   export default function Footer() {
     return (
-      <footer className="w-full bg-[#74538E] text-white py-16 px-[120px]">
+      <footer className="w-full bg-[#74538E] text-white py-16 px-[15px] md:px-[120px]">
         <div className="max-w-[1440px]">
-          <div className="flex justify-between gap-3 pb-6">
+          <div className="w-full flex justify-between gap-3 pb-6">
             <div className='hidden md:block max-w-56'>
               <h5 className="text-xl font-bold mb-2">{logo.title}</h5>
               <p>{logo.description}</p>
             </div>
-            <div className="w-[700px] flex flex-row justify-between">
+            <div className="w-[240px] md:w-[700px] flex flex-row justify-between">
               <div className='hidden md:block text-xl max-w-56'>
                 <h5 className='text-xl font-bold mb-2'>{info.title}</h5>
                 <>
@@ -86,10 +86,10 @@ const {logo, info, myContacts, mySocials, promo} = CONTENT.footer;
                 })}
               </div>
             </div>
-            <div className='w-[700px] flex flex-col lg:flex-row gap-4 justify-between items-center border border-[#603813] rounded-md bg-gradient-to-b from-[#6A00A6] from-20% to-[#74538E] px-5 py-3'>
+            <div className='w-[420px] md:w-[700px] flex flex-col lg:flex-row gap-4 justify-between items-center border border-[#603813] rounded-md bg-gradient-to-b from-[#6A00A6] from-20% to-[#74538E] px-5 py-3'>
                 <h5 className='w-[130px] text-xl font-bold'>{promo.title}</h5>
                 <div className='flex gap-4 items-center '>
-                  <p className='max-w-72 text-l md:text-2xl'>{promo.description}</p>
+                  <p className='max-w-[206px] text-l md:max-w-[278px] md:text-2xl'>{promo.description}</p>
                   <div className='text-l md:text-2xl border border-[#A49898] rounded-md p-2'>
                     {promo.code}
                   </div>
