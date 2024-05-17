@@ -1,0 +1,1 @@
+export {CONTENT} from "./common";
