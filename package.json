@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "sharp": "^0.33.4",
     "sugar-high": "^0.6.0",
+    "tailwindcss": "^3.4.3",
     "ts-pattern": "4.0.1",
     "typescript": "5.3.3"
   },
@@ -37,7 +38,6 @@
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.3",
     "typescript": "^5"
   }
 }
