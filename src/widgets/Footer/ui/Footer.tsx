@@ -75,8 +75,8 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4 items-center border border-brown rounded-md bg-gradient-to-b from-violet-500 from-20% to-violet-300 px-5 py-3">
-          <h5 className="text-xl font-bold">{promo.title}</h5>
+        <div className="max-w-[670px] flex flex-col lg:flex-row gap-4 items-center border border-brown rounded-md bg-gradient-to-b from-violet-500 from-20% to-violet-300 px-5 py-3">
+          <h5 className="max-w-[130px] text-xl font-bold">{promo.title}</h5>
           <div className="flex gap-4 items-center ">
             <p className="max-w-72 text-l md:text-2xl">{promo.description}</p>
             <div className="text-l md:text-2xl border border-gray rounded-md p-2">
