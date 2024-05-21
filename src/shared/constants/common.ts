@@ -288,4 +288,4 @@ const CONTENT = {
   },
 } as const;
 
-export { CONTENT };
+export { CONTENT, PHONE_NUMBER, EMAIL };
