@@ -10,7 +10,7 @@ type Props = {
 
 const Button: FC<Props> = ({text, link, className}) => {
   return (
-    <button className={clsx("bg-gray rounded-lg py-4 px-8 text-center text-xl", className)}>
+    <button className={clsx("bg-gray-400 rounded-lg py-4 px-8 text-center text-xl text-white", className)}>
       <Link 
         key={text}
         href={link || ''}
