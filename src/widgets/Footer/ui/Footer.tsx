@@ -3,11 +3,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CONTENT } from "@/shared/constants";
+import { Ubuntu } from "next/font/google";
+
+const manrope = Ubuntu({
+  subsets: ['latin', "cyrillic"],
+  weight: ['400', '700']
+});
 
 export default function Footer() {
   const { logo, info, myContacts, mySocials, promo } = CONTENT.footer;
   return (
-    <footer className="w-full bg-violet-400 py-16 px-20 text-white">
+    <footer className="w-full bg-violet-400 main-container text-white">
       <div className="flex justify-between gap-3 pb-6">
         <div className="hidden md:block max-w-56">
           <h5 className="text-xl font-bold mb-2">{logo.title}</h5>
