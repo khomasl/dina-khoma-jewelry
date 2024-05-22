@@ -53,7 +53,7 @@ export default function RootLayout({
         // GeistMono.variable
       )}
     >
-      <body className="antialiased w-full h-full px-20px mx-4  lg:mx-auto">
+      <body className="antialiased w-full h-full">
         <div className="w-full flex-auto min-w-0 min-h-screen flex flex-col px-2 md:px-0 overflow-hidden">
           <Navbar />
           <main className='w-full'>

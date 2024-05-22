@@ -44,7 +44,7 @@ const CONTENT = {
         title: "Купити",
         link: INSTAGRAM_URL,
       },
-      src: "hero.jpg",
+      src: "/hero.jpg",
     },
 
     {
@@ -84,19 +84,19 @@ const CONTENT = {
         title: "Дивитись колекцію",
         link: INSTAGRAM_URL,
       },
-      src: "about.jpg",
+      src: "/about.jpg",
     },
 
     {
       type: "features",
       header: "ОСОБЛИВОСТІ",
-      title: "",
-      description: "",
+      title: "Досвід та якісні матеріали",
+      description: "Більше 10 років досвіду.  Використовується тільки  якісна полімерна глина.",
       button: {
         title: "Дізнатись більше",
         link: INSTAGRAM_URL,
       },
-      src: "features.jpg",
+      src: "/features.jpg",
     },
 
     {
@@ -108,25 +108,25 @@ const CONTENT = {
           title: "",
           description: "",
           price: "",
-          src: "1.jpg",
+          src: "/1.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          src: "2.jpg",
+          src: "/2.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          src: "3.jpg",
+          src: "/3.jpg",
         },
         {
           title: "",
           description: "",
           price: "",
-          src: "4.jpg",
+          src: "/4.jpg",
         },
       ],
     },

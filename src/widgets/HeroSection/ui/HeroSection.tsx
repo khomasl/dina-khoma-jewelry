@@ -32,13 +32,16 @@ const HeroSection: FC<Props> = ({section}) => {
     >
       <div className="absolute w-full h-full -z-10 overflow-hidden">
         <Image
-          className="w-full h-full object-cover"
+          className="object-cover"
+          // width={1440}
+          // height={590}
+          fill
           alt={section.title || ''}
-          src={require(`/public/${section.src}?url`)}
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-          }}
+          src={section.src}
+          // style={{
+          //   maxWidth: "100%",
+          //   height: "auto",
+          // }}
           // unoptimized 
         />
       </div>
