@@ -3,11 +3,7 @@
 import { Ubuntu } from "next/font/google";
 import clsx from "clsx";
 
-import { Contacts } from "./ui";
-import Logo from "./ui/Logo/Logo";
-import Info from "./ui/Info/Info";
-import Socials from "./ui/Socials/Socials";
-import Promo from "./ui/Promo/Promo";
+import { Contacts, Logo, Info, Socials, Promo } from "./ui";
 
 import { CONTENT } from "@/shared/constants";
 
