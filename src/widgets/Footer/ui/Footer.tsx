@@ -3,11 +3,7 @@
 import { Ubuntu } from "next/font/google";
 import clsx from "clsx";
 
-import { Contacts } from "./ui";
-import Logo from "./ui/Logo/Logo";
-import Info from "./ui/Info/Info";
-import Socials from "./ui/Socials/Socials";
-import Promo from "./ui/Promo/Promo";
+import { Contacts, Logo, Info, Socials, Promo } from ".";
 
 import { CONTENT } from "@/shared/constants";
 
@@ -27,8 +23,8 @@ export default function Footer() {
       )}
     >
         <Logo title={logo.title} description={logo.description} />
-        <Info info={info} />
-        <Contacts contacts={myContacts} />
+        <Info className="items-center" info={info} />
+        <Contacts className="justify-self-end" contacts={myContacts} />
         <Socials socials={mySocials} />
         <Promo className="col-span-2" promo={promo} />
     </footer>

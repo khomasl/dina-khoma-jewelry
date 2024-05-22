@@ -2,14 +2,16 @@ import { FC } from "react";
 import Link from "next/link";
 
 import { CONTENT } from "@/shared/constants";
+import clsx from "clsx";
 
 type Props = {
   info: typeof CONTENT['footer']['info'];
+  className?: string;
 }
 
-const Info: FC<Props> = ({info}) => {
+const Info: FC<Props> = ({info, className}) => {
   return (
-    <div className="hidden md:block text-xl max-w-56">
+    <div className={clsx("hidden md:block text-xl max-w-56", className)}>
       <h5 className="text-xl font-bold mb-2">{info.title}</h5>
       <>
         {info.nav.map((item) => (
