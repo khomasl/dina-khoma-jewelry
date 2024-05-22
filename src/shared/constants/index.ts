@@ -1,1 +1,1 @@
-export {CONTENT} from "./common";
+export { CONTENT } from "./common";

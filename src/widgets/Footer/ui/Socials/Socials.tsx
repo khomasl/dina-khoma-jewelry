@@ -1,7 +1,8 @@
-import { CONTENT } from "@/shared/constants";
-import Image from "next/image"
-import Link from "next/link"
 import { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+import { CONTENT } from "@/shared/constants";
 
 type Props = {
   socials: typeof CONTENT['footer']['mySocials'];

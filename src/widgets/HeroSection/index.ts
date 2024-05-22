@@ -1,1 +1,1 @@
-export {default as HeroSection} from './ui';
+export { default as HeroSection } from './ui';
