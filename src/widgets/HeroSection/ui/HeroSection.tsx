@@ -33,16 +33,9 @@ const HeroSection: FC<Props> = ({section}) => {
       <div className="absolute w-full h-full -z-10 overflow-hidden">
         <Image
           className="object-cover"
-          // width={1440}
-          // height={590}
-          fill
           alt={section.title || ''}
           src={section.src}
-          // style={{
-          //   maxWidth: "100%",
-          //   height: "auto",
-          // }}
-          // unoptimized 
+          fill
         />
       </div>
       <div className=" flex flex-col md:items-start items-center justify-center md:w-1/2 max-w-[588px] px-20 py-24 text-white">
