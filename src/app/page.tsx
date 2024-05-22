@@ -1,6 +1,7 @@
-import {AboutSection, CollectionSection, FeaturesSection, HeroSection} from "@/widgets";
-import {CONTENT} from "@/shared/constants";
-import {match} from "ts-pattern";
+import { match } from "ts-pattern";
+
+import { AboutSection, CollectionSection, FeaturesSection, HeroSection } from "@/widgets";
+import { CONTENT } from "@/shared/constants";
 
 export default function Page() {
     return CONTENT.main.map(item =>
