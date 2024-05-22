@@ -1,6 +1,7 @@
-import { CONTENT } from "@/shared/constants";
-import clsx from "clsx";
 import { FC } from "react";
+import clsx from "clsx";
+
+import { CONTENT } from "@/shared/constants";
 
 type Props = {
   promo: typeof CONTENT['footer']['promo'];

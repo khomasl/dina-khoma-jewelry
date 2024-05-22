@@ -1,1 +1,1 @@
-export {CollectionSection} from './ui';
+export { CollectionSection } from './ui';

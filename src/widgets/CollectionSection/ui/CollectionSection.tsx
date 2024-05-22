@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { Manrope } from 'next/font/google';
-
-import { CONTENT } from "@/shared/constants";
 import clsx from "clsx";
+
 import { ProductCard } from "@/features";
+import { CONTENT } from "@/shared/constants";
 
 type Props = {
   section: typeof CONTENT['main'][number] & {type: "currentCollections" | "otherCollections"}
-}
+};
 
 const manrope = Manrope({
   subsets: ['latin', "cyrillic"],

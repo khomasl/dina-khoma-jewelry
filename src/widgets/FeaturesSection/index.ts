@@ -1,1 +1,1 @@
-export {FeaturesSection} from "./ui";
+export { FeaturesSection } from "./ui";

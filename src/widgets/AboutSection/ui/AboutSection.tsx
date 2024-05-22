@@ -1,10 +1,10 @@
 import { FC } from "react";
 import Image from "next/image";
 import { Manrope } from 'next/font/google';
-
-import { CONTENT } from "@/shared/constants";
-import { Button } from "@/shared/ui";
 import clsx from "clsx";
+
+import { Button } from "@/shared/ui";
+import { CONTENT } from "@/shared/constants";
 
 type Props = {
   section: typeof CONTENT['main'][number] & {type: "aboutMe"}

@@ -4,10 +4,10 @@ import React, { FC } from "react";
 
 import Image from 'next/image';
 import { Poppins } from "next/font/google";
+import clsx from "clsx";
 
 import { CONTENT } from "@/shared/constants";
-import {Button} from "@/shared/ui";
-import clsx from "clsx";
+import { Button } from "@/shared/ui";
 
 type Props = {
   section: typeof CONTENT['main'][number] & {type: "hero"}
