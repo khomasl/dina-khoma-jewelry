@@ -1,3 +1,5 @@
-import Footer from './Footer';
+import { Contacts } from './Contacts';
 
-export default Footer;
+export { 
+    Contacts
+};
