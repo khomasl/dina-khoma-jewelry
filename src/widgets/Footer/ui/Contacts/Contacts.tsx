@@ -3,14 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { CONTENT, EMAIL, PHONE_NUMBER } from "@/shared/constants/common";
+import clsx from "clsx";
 
 type Props = {
   contacts: typeof CONTENT['footer']['myContacts'];
+  className?: string;
 }
 
-const Contacts: FC<Props> = ({contacts}) => {
+const Contacts: FC<Props> = ({contacts, className}) => {
   return (
-    <div className="text-xl max-w-56">
+    <div className={clsx("text-xl max-w-56", className)}>
       <h5 className="text-xl font-bold mb-2">{contacts.title}</h5>
       {contacts.contacts.map((contact) => (
         <Link

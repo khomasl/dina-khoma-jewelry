@@ -1,13 +1,7 @@
-import { Contacts } from './Contacts';
-import { Socials } from './Socials';
-import { Promo } from './Promo';
-import { Logo } from './Logo';
-import { Info } from './Info';
+export { default as Footer } from './Footer';
 
-export { 
-  Contacts,
-  Socials,
-  Promo,
-  Logo,
-  Info
-};
+export { Contacts } from './Contacts';
+export { Socials } from './Socials';
+export { Promo } from './Promo';
+export { Logo } from './Logo';
+export { Info } from './Info';

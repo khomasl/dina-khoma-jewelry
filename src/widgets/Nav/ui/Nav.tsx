@@ -2,11 +2,7 @@
 import { Manrope } from "next/font/google";
 import clsx from "clsx";
 
-import Burger from "./burger";
-import Logo from "./logo";
-import Menu from "./nav-menu";
-import Phone from "./phone";
-import Socials from "./nav-socials";
+import { Phone, Burger, Logo, Menu, Socials } from ".";
 
 const manrope = Manrope({
   subsets: ['latin', "cyrillic"],
