@@ -17,10 +17,10 @@ const manrope = Manrope({
 const CollectionSection: FC<Props> = ({section}) => {
   return (
     <div className={clsx(manrope.className, "main-container")}>
-      <span className="font-bold">{section.header}</span>
+      <span className="font-bold text-violet-400">{section.header}</span>
       <h2 className="text-5xl font-bold mb-10 mt-4 max-w-2/3">{section.title}</h2>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-        {section.items.map(item => <ProductCard product={item} /> )}
+        {section.items.map(item => <ProductCard key={item.src} product={item} /> )}
       </div>
     </div>
   );
