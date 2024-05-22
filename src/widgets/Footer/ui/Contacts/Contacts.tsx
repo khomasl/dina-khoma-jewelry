@@ -1,7 +1,8 @@
-import { CONTENT, EMAIL, PHONE_NUMBER } from "@/shared/constants/common"
-import Image from "next/image"
-import Link from "next/link"
 import { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+import { CONTENT, EMAIL, PHONE_NUMBER } from "@/shared/constants/common";
 
 type Props = {
   contacts: typeof CONTENT['footer']['myContacts'];

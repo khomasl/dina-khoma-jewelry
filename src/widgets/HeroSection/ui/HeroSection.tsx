@@ -4,10 +4,10 @@ import React, { FC } from "react";
 
 import Image from 'next/image';
 import { Poppins } from "next/font/google";
+import clsx from "clsx";
 
 import { CONTENT } from "@/shared/constants";
-import {Button} from "@/shared/ui";
-import clsx from "clsx";
+import { Button } from "@/shared/ui";
 
 type Props = {
   section: typeof CONTENT['main'][number] & {type: "hero"}
@@ -32,14 +32,10 @@ const HeroSection: FC<Props> = ({section}) => {
     >
       <div className="absolute w-full h-full -z-10 overflow-hidden">
         <Image
-          className="w-full h-full object-cover"
+          className="object-cover"
           alt={section.title || ''}
-          src={require(`/public/${section.src}?url`)}
-          style={{
-            maxWidth: "100%",
-            height: "auto",
-          }}
-          // unoptimized 
+          src={section.src}
+          fill
         />
       </div>
       <div className=" flex flex-col md:items-start items-center justify-center md:w-1/2 max-w-[588px] px-20 py-24 text-white">

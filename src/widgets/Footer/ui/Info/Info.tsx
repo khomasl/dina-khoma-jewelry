@@ -1,6 +1,7 @@
-import { CONTENT } from "@/shared/constants";
-import Link from "next/link";
 import { FC } from "react";
+import Link from "next/link";
+
+import { CONTENT } from "@/shared/constants";
 
 type Props = {
   info: typeof CONTENT['footer']['info'];

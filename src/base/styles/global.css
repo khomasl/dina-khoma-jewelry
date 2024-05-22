@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  box-sizing: border-box;
+}
+
 .main-container {
   padding: 30px 65px 30px 65px;
+}
+
+.product-card {
+  box-shadow: 0px 10px 60px 0px #0000000D;
 }
 
 @media (min-width: 760px) {

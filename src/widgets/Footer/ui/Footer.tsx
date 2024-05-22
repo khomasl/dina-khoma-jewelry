@@ -1,14 +1,15 @@
 "use client";
 
-import { CONTENT } from "@/shared/constants";
 import { Ubuntu } from "next/font/google";
+import clsx from "clsx";
 
 import Logo from "./Logo/Logo";
 import Info from "./Info/Info";
 import Contacts from "./Contacts/Contacts";
 import Socials from "./Socials/Socials";
 import Promo from "./Promo/Promo";
-import clsx from "clsx";
+
+import { CONTENT } from "@/shared/constants";
 
 const ubuntu = Ubuntu({
   subsets: ['latin', "cyrillic"],
