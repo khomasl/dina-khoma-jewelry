@@ -51,51 +51,51 @@ const CONTENT = {
       type: "slider",
       items: [
         {
-          src: "current/1.jpg",
+          src: "/current-collections/1.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "current/2.jpg",
+          src: "/current-collections/2.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "current/3.jpg",
+          src: "/current-collections/3.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "current/4.jpg",
+          src: "/current-collections/4.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/1.jpg",
+          src: "/other-collections/1.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/2.jpg",
+          src: "/other-collections/2.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/3.jpg",
+          src: "/other-collections/3.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/4.jpg",
+          src: "/other-collections/4.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/5.jpg",
+          src: "/other-collections/5.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/6.jpg",
+          src: "/other-collections/6.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/7.jpg",
+          src: "/other-collections/7.jpg",
           link: INSTAGRAM_URL,
         },
         {
-          src: "other/8.jpg",
+          src: "/other-collections/8.jpg",
           link: INSTAGRAM_URL,
         },
       ],

@@ -1,6 +1,14 @@
 import { match } from "ts-pattern";
 
-import { AboutSection, CollectionSection, FeaturesSection, FeedbackSection, HeroSection } from "@/widgets";
+import { 
+    AboutSection, 
+    CollectionSection, 
+    FeaturesSection, 
+    FeedbackSection, 
+    HeroSection, 
+    SliderSection 
+} from "@/widgets";
+
 import { CONTENT } from "@/shared/constants";
 
 export default function Page() {
@@ -12,6 +20,7 @@ export default function Page() {
             .with({type: "currentCollections"}, (section) => <CollectionSection section={section} />)
             .with({type: "otherCollections"}, (section) => <CollectionSection section={section} />)
             .with({type: "feedback"}, (section) => <FeedbackSection section={section} />)
+            .with({type: "slider"}, (section) => <SliderSection className="hidden lg:flex" section={section} />)
             .otherwise(() => null)
         )
   }

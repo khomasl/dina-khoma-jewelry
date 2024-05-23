@@ -6,11 +6,12 @@ import { CONTENT } from "@/shared/constants";
 
 type Props = {
   socials: typeof CONTENT['footer']['mySocials'];
+  className?: string
 }
 
-const Socials: FC<Props> = ({socials}) => {
+const Socials: FC<Props> = ({socials, className}) => {
   return (
-    <div>
+    <div className={className}>
       <h5 className="text-xl font-bold mb-2">{socials.title}</h5>
       <div className="flex ">
         {socials.socials.map((social) => (

@@ -54,7 +54,7 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased w-full h-full">
-        <div className="w-full flex-auto min-w-0 min-h-screen flex flex-col px-2 md:px-0 overflow-hidden">
+        <div className="w-full flex-auto min-w-0 min-h-screen flex flex-col overflow-hidden">
           <Navbar />
           <main className='w-full'>
             {children}
