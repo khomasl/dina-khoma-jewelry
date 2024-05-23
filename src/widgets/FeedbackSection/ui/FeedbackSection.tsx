@@ -9,10 +9,18 @@ import { CONTENT } from "@/shared/constants";
 import { FeedbackCard } from ".";
 import Image from "next/image";
 import { SwiperOptions } from "swiper/types";
+import { Manrope } from "next/font/google";
+import clsx from "clsx";
 
 type Props = {
   section: typeof CONTENT['main'][number] & {type: 'feedback'};
 };
+
+
+const manrope = Manrope({
+  subsets: ['latin', "cyrillic"],
+});
+
 
 const FeedbackSection: FC<Props> = ({section}) => {
   const [swiper, setSwiper] = useState<SwiperClass>();
@@ -31,7 +39,12 @@ const FeedbackSection: FC<Props> = ({section}) => {
   }
 
   return (
-    <div className="flex flex-col items-center main-container bg-violet-400 text-white">
+    <div 
+      className={clsx(
+        "flex flex-col items-center main-container bg-violet-400 text-white", 
+        manrope.className
+      )}
+    >
       <span className="font-bold">{section.header}</span>
       <h2 className="text-5xl font-bold mb-10 mt-4 max-w-2/3">{section.title}</h2>
       <div className="w-full flex gap-5">
