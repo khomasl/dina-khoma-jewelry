@@ -45,8 +45,8 @@ const FeedbackSection: FC<Props> = ({section}) => {
         manrope.className
       )}
     >
-      <span className="font-bold">{section.header}</span>
-      <h2 className="text-5xl font-bold mb-10 mt-4 max-w-2/3">{section.title}</h2>
+      <div className="font-bold text-center lg:text-left">{section.header}</div>
+      <h2 className="text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
       <div className="w-full flex gap-5">
         <button onClick={() => swiper?.slidePrev()}>
           <Image

@@ -24,8 +24,8 @@ const HeroSection: FC<Props> = ({section}) => {
     <div 
       className={
         clsx(
-          "flex items-center justify-center md:justify-start md:min-h-[700px]", 
-          "h-fit w-full relative aspect-[6/5] md:aspect-auto",
+          "flex items-center justify-center lg:justify-start", 
+          "h-fit w-full relative aspect-[6/5] lg:aspect-auto",
           poppins.className
         )
       }
@@ -38,8 +38,8 @@ const HeroSection: FC<Props> = ({section}) => {
           fill
         />
       </div>
-      <div className=" flex flex-col md:items-start items-center justify-center md:w-1/2 max-w-[588px] px-20 py-24 text-white">
-        <h1 className="text-2xl xl:text-5xl font-bold mb-6">{section.title}</h1>
+      <div className=" flex flex-col lg:items-start items-center justify-center lg:w-1/2 max-w-[588px] px-10 py-10 lg:px-20 lg:py-24 text-white">
+        <h1 className="text-2xl xl:text-5xl font-bold mb-6 text-center lg:text-left">{section.title}</h1>
         <p className="hidden lg:block text-xl mb-6">{section.description}</p>
         <Button 
           className="w-1/3"
