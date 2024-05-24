@@ -14,7 +14,7 @@ body {
   box-shadow: 0px 10px 60px 0px #0000000D;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 1024px) {
   .main-container {
     padding: 60px 120px 60px 120px;
   }

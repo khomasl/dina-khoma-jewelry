@@ -30,7 +30,7 @@ const AboutSection: FC<Props> = ({section}) => {
       </div>
       <div className={clsx("row-start-1 lg:col-start-2 lg:pl-20 pb-10 lg:pb-0", manrope.className)}>
         <div className="text-violet-400 font-bold px-10 lg:px-0 text-center lg:text-left">{section.header}</div>
-        <h2 className="text-5xl font-bold mb-6 mt-2 max-w-2/3 px-10 lg:px-0 text-center lg:text-left">{section.title}</h2>
+        <h2 className=" text-4xl lg:text-5xl font-bold mb-6 mt-2 max-w-2/3 px-10 lg:px-0 text-center lg:text-left">{section.title}</h2>
         <p className="text-xl text-gray-900 mb-3 ">{section.description}</p>
         <div className="flex gap-5 justify-between mb-6">
           {section.items.map(item => (

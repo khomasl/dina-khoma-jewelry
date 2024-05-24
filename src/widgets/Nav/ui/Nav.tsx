@@ -12,14 +12,14 @@ export default function Navbar() {
   return (
       <aside 
         className={clsx(
-          "border-b w-full py-4 px-[15px] md:px-[120px] tracking-tight", 
+          "border-b w-full py-4 px-[15px] lg:px-[120px] tracking-tight", 
           manrope.className
         )}
       >
-        <div className="max-w-[1440px] lg:sticky lg:top-20">
+        <div className="w-full lg:sticky lg:top-20">
           <nav
               className={clsx(
-                "w-full flex flex-row items-center justify-between relative", 
+                "w-full h-fit flex flex-row items-center justify-between relative", 
                 "px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
               )}
               id="nav"
