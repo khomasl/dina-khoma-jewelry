@@ -39,7 +39,7 @@ const HeroSection: FC<Props> = ({section}) => {
         />
       </div>
       <div className=" flex flex-col lg:items-start items-center justify-center lg:w-1/2 max-w-[588px] px-10 py-10 lg:px-20 lg:py-24 text-white">
-        <h1 className="text-2xl xl:text-5xl font-bold mb-6 text-center lg:text-left">{section.title}</h1>
+        <h1 className="text-2xl lg:text-5xl font-bold mb-6 text-center lg:text-left">{section.title}</h1>
         <p className="hidden lg:block text-xl mb-6">{section.description}</p>
         <Button 
           className="w-1/3"

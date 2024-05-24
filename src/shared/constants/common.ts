@@ -1,3 +1,6 @@
+const BREAKPOINT_LG = 1024;
+const BREAKPOINT_MD = 768;
+
 const INSTAGRAM_URL = "https://www.instagram.com/dinakhoma/";
 const FACEBOOK_URL = "https://www.facebook.com/dina.khoma.5";
 const TELEGRAM_URL = "https://t.me/dina_khoma";
@@ -7,7 +10,7 @@ const EMAIL = "KhomaDina@gmail.com";
 const CONTENT = {
   header: {
     logo: {
-      src: "logo.png",
+      src: "/logo.png",
       title: "Dina Khoma Jewelry Logo"
     },
     nav: ["Про мене", "Мої вироби", "Відгуки"],
@@ -336,4 +339,10 @@ const CONTENT = {
   },
 } as const;
 
-export { CONTENT, PHONE_NUMBER, EMAIL };
+export { 
+  CONTENT, 
+  PHONE_NUMBER, 
+  EMAIL, 
+  BREAKPOINT_LG, 
+  BREAKPOINT_MD
+};
