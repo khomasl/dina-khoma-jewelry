@@ -13,7 +13,20 @@ const CONTENT = {
       src: "/logo.png",
       title: "Dina Khoma Jewelry Logo"
     },
-    nav: ["Про мене", "Мої вироби", "Відгуки"],
+    nav: [
+      {
+        link: "#about",
+        title: "Про мене"
+      }, 
+      {
+        link: "#collection",
+        title: "Мої вироби"
+      }, 
+      {
+        link: "#feedbacks",
+        title: "Відгуки"
+      }, 
+    ],
     socials: [
       {
         src: "instagram.svg",

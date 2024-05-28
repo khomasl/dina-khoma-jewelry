@@ -7,6 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { baseUrl } from '@/shared/utils/sitemap';
 import {Navbar, Footer} from '@/widgets';
+import { TopButton } from '@/shared/ui';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -48,7 +49,7 @@ export default function RootLayout({
     <html
       lang="uk"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        'text-black bg-white dark:text-white dark:bg-black scroll-smooth',
         // GeistSans.variable,
         // GeistMono.variable
       )}
@@ -60,6 +61,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <TopButton />
           <Analytics />
           <SpeedInsights />
         </div>
