@@ -24,7 +24,7 @@ const Contacts: FC<Props> = ({contacts, className}) => {
                 `mailto:${contact.link}` :
                 contact.link
           }
-          className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 text-base"
+          className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 my-1 text-base"
         >
           <Image
             alt={contact.title}
