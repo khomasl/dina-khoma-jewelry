@@ -39,7 +39,8 @@ const FeedbackSection: FC<Props> = ({section}) => {
   }
 
   return (
-    <div 
+    <section 
+      id="feedbacks"
       className={clsx(
         "flex flex-col items-center main-container bg-violet-400 text-white", 
         manrope.className
@@ -77,7 +78,7 @@ const FeedbackSection: FC<Props> = ({section}) => {
           />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

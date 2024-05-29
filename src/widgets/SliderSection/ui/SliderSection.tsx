@@ -36,7 +36,7 @@ const SliderSection: FC<Props> = ({section, className}) => {
   };
 
   return (
-    <div 
+    <section 
       className={clsx(
         "main-container w-full flex gap-5", 
         className, 
@@ -80,7 +80,7 @@ const SliderSection: FC<Props> = ({section, className}) => {
           height={40}
         />
       </button>
-    </div>
+    </section>
   );
 };
 
