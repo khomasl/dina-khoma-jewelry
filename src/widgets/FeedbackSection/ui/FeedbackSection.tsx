@@ -47,7 +47,7 @@ const FeedbackSection: FC<Props> = ({section}) => {
       )}
     >
       <div className="font-bold text-center lg:text-left">{section.header}</div>
-      <h2 className=" text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
       <div className="w-full flex gap-5">
         <button onClick={() => swiper?.slidePrev()}>
           <Image
