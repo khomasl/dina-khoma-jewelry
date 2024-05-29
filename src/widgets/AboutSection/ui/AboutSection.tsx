@@ -17,9 +17,9 @@ const manrope = Manrope({
 
 const AboutSection: FC<Props> = ({section}) => {
   return (
-    <div 
-      className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-full main-container"
+    <section 
       id="about"
+      className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-full main-container"
     >
       <div className="px-10 lg:px-0 pb-10 lg:pb-0">
         <div className="relative w-full aspect-square overflow-hidden rounded-3xl px-10 lg:px-0">
@@ -50,7 +50,7 @@ const AboutSection: FC<Props> = ({section}) => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

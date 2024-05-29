@@ -5,6 +5,19 @@ import { CONTENT } from "@/shared/constants";
 
 const { nav } = CONTENT.header;
 
+// const navItems = {
+//   "/about": {
+//     name: nav[0],
+//   },
+//   "/collections": {
+//     name: nav[1],
+//   },
+//   "/contacts": {
+//     name: nav[2],
+//   },
+// };
+
+
 const Menu = () => {
   return (
     <div className="hidden lg:flex flex-row space-x-1 ml-5">

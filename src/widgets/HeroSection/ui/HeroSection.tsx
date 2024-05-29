@@ -21,7 +21,7 @@ const poppins = Poppins({
 const HeroSection: FC<Props> = ({section}) => {
 
   return (
-    <div 
+    <section 
       className={
         clsx(
           "flex items-center justify-center lg:justify-start", 
@@ -47,7 +47,7 @@ const HeroSection: FC<Props> = ({section}) => {
           text={section.button?.title || ''} 
         />
       </div>
-    </div>
+    </section>
   );
 };
 
