@@ -4,6 +4,7 @@ import clsx from "clsx";
 
 import { Phone, Logo, Socials, MobileMenu } from ".";
 import { Menu } from "@/features";
+import { Suspense } from "react";
 
 
 const manrope = Manrope({
@@ -30,7 +31,9 @@ export default function Navbar() {
             <Menu className="hidden lg:flex" />
             <Socials />
             <Phone />
-            <MobileMenu />
+            <Suspense>
+              <MobileMenu />
+            </Suspense>
           </nav>
         </div>
       </aside>
