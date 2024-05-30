@@ -1,11 +1,24 @@
 import Link from "next/link";
 import { CONTENT } from "@/shared/constants";
+import clsx from "clsx";
+import { FC } from "react";
 
 const { nav } = CONTENT.header;
 
-const Menu = () => {
+type Props = {
+  className?: string;
+  type?: 'horizontal' | 'vertical';
+}
+
+const Menu: FC<Props> = ({className, type = 'horizontal'}) => {
   return (
-    <div className="hidden lg:flex flex-row space-x-1 ml-5">
+    <div 
+      className={clsx(
+        "flex flex-row space-x-1 lg:ml-5", 
+        [{'flex-col': type === "vertical"}],
+        className
+      )}
+    >
       {nav.map((navItem) => {
         return (
           <Link

@@ -2,7 +2,10 @@
 import { Manrope } from "next/font/google";
 import clsx from "clsx";
 
-import { Phone, Burger, Logo, Menu, Socials } from ".";
+import { Phone, Logo, Socials, MobileMenu } from ".";
+import { Menu } from "@/features";
+import { Suspense } from "react";
+
 
 const manrope = Manrope({
   subsets: ['latin', "cyrillic"],
@@ -25,10 +28,12 @@ export default function Navbar() {
               id="nav"
           >
             <Logo />
-            <Menu />
+            <Menu className="hidden lg:flex" />
             <Socials />
             <Phone />
-            <Burger />
+            <Suspense>
+              <MobileMenu />
+            </Suspense>
           </nav>
         </div>
       </aside>
