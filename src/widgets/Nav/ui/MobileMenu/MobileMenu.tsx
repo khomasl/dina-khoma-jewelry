@@ -3,7 +3,6 @@
 import {Fragment, Suspense, useEffect, useState} from 'react';
 
 import {Dialog, Transition} from '@headlessui/react';
-// import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Link from 'next/link';
 import {usePathname, useSearchParams} from 'next/navigation';
@@ -15,8 +14,6 @@ const MobileMenu = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
-  const openMobileMenu = () => setIsOpen(true);
-  const closeMobileMenu = () => setIsOpen(false);
   const currentParams = Object.fromEntries(searchParams.entries());
 
   useEffect(() => {
@@ -37,9 +34,10 @@ const MobileMenu = () => {
     <>
       <button
         type='button'
-        onClick={openMobileMenu}
+        onClick={() => setIsOpen(true)}
         aria-label='Open mobile menu'
-        className='flex size-11 cursor-pointer items-center justify-center rounded-md transition-colors'>
+        className='lg:hidden flex size-11 cursor-pointer items-center justify-center rounded-md transition-colors'
+      >
         <Image
           alt="open"
           src="/svg/menu_40px.svg"
@@ -52,7 +50,7 @@ const MobileMenu = () => {
         />
       </button>
       <Transition show={isOpen}>
-        <Dialog onClose={closeMobileMenu} className='relative z-50'>
+        <Dialog onClose={() => setIsOpen(false)} className='relative z-50'>
           <Transition.Child
             as={Fragment}
             enter='transition-all ease-in-out duration-300'
