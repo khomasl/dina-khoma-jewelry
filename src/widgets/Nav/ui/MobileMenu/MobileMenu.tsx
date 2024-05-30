@@ -1,12 +1,9 @@
 'use client';
 
-import {Fragment, Suspense, useEffect, useState} from 'react';
+import {Fragment, useEffect, useState} from 'react';
 
 import {Dialog, Transition} from '@headlessui/react';
-import clsx from 'clsx';
-import Link from 'next/link';
 import {usePathname, useSearchParams} from 'next/navigation';
-import { Burger } from '../Burger';
 import { MenuContent } from './MenuContent';
 import Image from 'next/image';
 
