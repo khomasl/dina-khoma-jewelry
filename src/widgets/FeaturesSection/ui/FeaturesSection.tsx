@@ -16,11 +16,13 @@ const manrope = Manrope({
 
 const FeaturesSection: FC<Props> = ({section}) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center w-full main-container bg-violet-400 text-white">
+    <section 
+      className="grid grid-cols-1 lg:grid-cols-2 items-center w-full main-container bg-violet-400 text-white"
+    >
       <div className={clsx("lg:pr-20 pb-10 lg:pb-0", manrope.className)}>
         <div className="font-bold px-10 lg:px-0 text-center lg:text-left">{section.header}</div>
-        <h2 className="text-4xl lg:text-5xl font-bold mb-6 mt-2 max-w-2/3 px-10 lg:px-0 text-center lg:text-left">{section.title}</h2>
-        <p className="text-xl mb-3">{section.description}</p>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 mt-2 max-w-2/3 px-10 lg:px-0 text-center lg:text-left">{section.title}</h2>
+        <p className="text-center lg:text-left text-xl mb-3">{section.description}</p>
         <div className="mx-auto w-fit lg:mx-0">
           <Button 
             link={section.button?.link || ''}
@@ -38,7 +40,7 @@ const FeaturesSection: FC<Props> = ({section}) => {
             />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

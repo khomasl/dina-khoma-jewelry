@@ -39,14 +39,15 @@ const FeedbackSection: FC<Props> = ({section}) => {
   }
 
   return (
-    <div 
+    <section 
+      id="feedbacks"
       className={clsx(
         "flex flex-col items-center main-container bg-violet-400 text-white", 
         manrope.className
       )}
     >
       <div className="font-bold text-center lg:text-left">{section.header}</div>
-      <h2 className=" text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
       <div className="w-full flex gap-5">
         <button onClick={() => swiper?.slidePrev()}>
           <Image
@@ -77,7 +78,7 @@ const FeedbackSection: FC<Props> = ({section}) => {
           />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
