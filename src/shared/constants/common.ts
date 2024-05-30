@@ -48,6 +48,10 @@ const CONTENT = {
       title: "093 107 08 51",
       link: PHONE_NUMBER,
     },
+    email: {
+      title: EMAIL,
+      link: EMAIL
+    }
   },
 
   main: [
