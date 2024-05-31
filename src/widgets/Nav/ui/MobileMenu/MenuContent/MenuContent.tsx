@@ -8,8 +8,8 @@ const MenuContent = () => {
     <div className="flex flex-col justify-between h-full">
       <Menu type="vertical" />
       <div>
-        <Link className="block text-4xl mb-2 text-violet-400 font-bold" href={phone.link}>{phone.title}</Link>
-        <Link className="block text-2xl mb-10 text-gray-400 font-bold" href={email.link}>{email.title}</Link>
+        <Link className="block text-4xl mb-2 text-violet-400 font-bold" href={`tel:${phone.link}`}>{phone.title}</Link>
+        <Link className="block text-2xl mb-10 text-gray-400 font-bold" href={`mailTo:${email.link}`}>{email.title}</Link>
         <div className="flex justify-between text-violet-400 font-bold">
           {socials.map((social) => (
             <>

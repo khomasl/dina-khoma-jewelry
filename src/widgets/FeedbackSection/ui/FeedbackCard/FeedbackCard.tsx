@@ -16,7 +16,7 @@ const FeedbackCard: FC<Props> = ({feedback}) => {
         <Image
           className="object-cover"
           alt={feedback.title || ''}
-          src={feedback.src}
+          src={feedback.src || "/no-photo.png"}
           fill
         />
       </div>
