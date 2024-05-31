@@ -45,10 +45,11 @@ const SliderSection: FC<Props> = ({section, className}) => {
       >
       <button onClick={() => swiper?.slidePrev()}>
         <Image
+          className="overflow-hidden rounded-full border hover:scale-105 transition-all"
           alt={'<'}
           src={'/svg/arrow-left.svg'}
-          width={40}
-          height={40}
+          width={50}
+          height={50}
         />
       </button>
       <Swiper
@@ -73,11 +74,11 @@ const SliderSection: FC<Props> = ({section, className}) => {
       </Swiper>
       <button onClick={() => swiper?.slideNext()}>
         <Image
-          className="rotate-180"
+          className="overflow-hidden rounded-full rotate-180 border hover:scale-105 transition-all"
           alt={'>'}
           src={'/svg/arrow-left.svg'}
-          width={40}
-          height={40}
+          width={50}
+          height={50}
         />
       </button>
     </section>

@@ -51,10 +51,11 @@ const FeedbackSection: FC<Props> = ({section}) => {
       <div className="w-full flex gap-5">
         <button onClick={() => swiper?.slidePrev()}>
           <Image
+            className="hover:scale-105 transition-all mx-2"
             alt={'<'}
             src={'/svg/arrow-left.svg'}
-            width={40}
-            height={40}
+            width={50}
+            height={50}
           />
         </button>
         <Swiper
@@ -70,11 +71,11 @@ const FeedbackSection: FC<Props> = ({section}) => {
         </Swiper>
         <button onClick={() => swiper?.slideNext()}>
           <Image
-            className="rotate-180"
+            className="rotate-180 hover:scale-105 transition-all mx-2"
             alt={'>'}
             src={'/svg/arrow-left.svg'}
-            width={40}
-            height={40}
+            width={50}
+            height={50}
           />
         </button>
       </div>
