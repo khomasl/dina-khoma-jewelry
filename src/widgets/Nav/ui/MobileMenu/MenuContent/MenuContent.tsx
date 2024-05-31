@@ -5,7 +5,7 @@ import Link from "next/link";
 const MenuContent = () => {
   const { socials, phone, email} = CONTENT.header;
   return (
-    <div className="flex flex-col justify-between h-full">
+    <div className="flex flex-col justify-between h-full pb-6">
       <Menu type="vertical" />
       <div>
         <Link className="block text-4xl mb-2 text-violet-400 font-bold" href={`tel:${phone.link}`}>{phone.title}</Link>
