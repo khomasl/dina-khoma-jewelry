@@ -48,6 +48,10 @@ const CONTENT = {
       title: "093 107 08 51",
       link: PHONE_NUMBER,
     },
+    email: {
+      title: EMAIL,
+      link: EMAIL
+    }
   },
 
   main: [
@@ -157,10 +161,11 @@ const CONTENT = {
       title: "Найостанніші колекції",
       items: [
         {
-          title: "",
-          description: "",
-          price: "",
-          src: "/current-collections/1.jpg",
+          title: "rrrrr",
+          description: "rrrrrrrrr",
+          price: "12 rr",
+          src: "",
+          // src: "/current-collections/1.jpg",
           link: INSTAGRAM_URL,
         },
         {
@@ -195,7 +200,8 @@ const CONTENT = {
         {
           title: "Lorem ipsum.",
           description: "Lorem ipsum dolor sit amet!Lorem ipsum dolor sit amet!Lorem ipsum dolor sit amet!",
-          src: "/feedbacks/1.jpg",
+          src: "",
+          // src: "/feedbacks/1.jpg",
         },
         {
           title: "Lorem ipsum.",
