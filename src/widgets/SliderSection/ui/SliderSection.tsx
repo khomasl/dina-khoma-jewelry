@@ -63,7 +63,7 @@ const SliderSection: FC<Props> = ({section, className}) => {
                 <Image
                   className="absolute top-0 left-0 w-full h-full object-cover"
                   alt={''}
-                  src={item.src}
+                  src={item.src || "/no-photo.png"}
                   fill
                 />
               </Link>
