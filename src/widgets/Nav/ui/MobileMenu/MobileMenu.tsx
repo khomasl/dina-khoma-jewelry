@@ -6,6 +6,7 @@ import {Dialog, Transition} from '@headlessui/react';
 import {usePathname, useSearchParams} from 'next/navigation';
 import { MenuContent } from './MenuContent';
 import Image from 'next/image';
+import clsx from 'clsx';
 
 const MobileMenu = () => {
   const pathname = usePathname();
@@ -66,7 +67,11 @@ const MobileMenu = () => {
             leave='transition-all ease-in-out duration-200'
             leaveFrom='translate-x-0'
             leaveTo='translate-x-full'>
-            <Dialog.Panel className='fixed inset-y-0 right-0 flex size-full flex-col border-l border-neutral-700 bg-white/90 p-6 backdrop-blur-xl md:w-[390px]'>
+            <Dialog.Panel className={clsx(
+              'fixed inset-y-0 right-0 flex size-full flex-col overflow-auto', 
+              'border-l border-neutral-700 bg-white/90 p-6 backdrop-blur-xl md:w-[390px]'
+
+            )}>
               <div className='flex justify-end mb-4'>
                 <button onClick={() => setIsOpen(false)}>
                   <Image
