@@ -28,7 +28,7 @@ const Menu: FC<Props> = ({className, type = 'horizontal'}) => {
               "text-2xl transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative",
               [
                 {'py-1 my-2 font-bold': type === 'vertical'},
-                {'py-1 px-2 m-2': type === 'horizontal'}
+                {'py-1 px-2 2xl:m-2': type === 'horizontal'}
               ]
             )}
           >
