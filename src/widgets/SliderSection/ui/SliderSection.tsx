@@ -1,6 +1,7 @@
 "use client";
 
 import { CONTENT } from "@/shared/constants";
+import { ArrowButton } from "@/shared/ui";
 import clsx from "clsx";
 import { Manrope } from "next/font/google";
 import Image from "next/image";
@@ -38,19 +39,12 @@ const SliderSection: FC<Props> = ({section, className}) => {
   return (
     <section 
       className={clsx(
-        "main-container w-full flex gap-5", 
+        "main-container w-full flex gap-5 items-center", 
         className, 
         manrope.className
         )}
       >
-      <button onClick={() => swiper?.slidePrev()}>
-        <Image
-          alt={'<'}
-          src={'/svg/arrow-left.svg'}
-          width={40}
-          height={40}
-        />
-      </button>
+      <ArrowButton className="border shrink-0" onClick={() => swiper?.slidePrev()} />
       <Swiper
         {...sliderParams}
         onInit={e => setSwiper(e)}
@@ -71,15 +65,7 @@ const SliderSection: FC<Props> = ({section, className}) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button onClick={() => swiper?.slideNext()}>
-        <Image
-          className="rotate-180"
-          alt={'>'}
-          src={'/svg/arrow-left.svg'}
-          width={40}
-          height={40}
-        />
-      </button>
+      <ArrowButton className="border shrink-0" onClick={() => swiper?.slideNext()} direction="right" />
     </section>
   );
 };

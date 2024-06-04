@@ -18,7 +18,7 @@ const Info: FC<Props> = ({info, className}) => {
           <Link
             key={item}
             href={"#"}
-            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 my-1 text-base"
+            className="transition-all hover:text-neutral-300 dark:hover:text-neutral-200 flex align-middle relative py-1 my-1 text-base"
           >
             {item}
           </Link>

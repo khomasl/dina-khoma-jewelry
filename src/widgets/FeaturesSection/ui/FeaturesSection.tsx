@@ -21,8 +21,8 @@ const FeaturesSection: FC<Props> = ({section}) => {
     >
       <div className={clsx("lg:pr-20 pb-10 lg:pb-0", manrope.className)}>
         <div className="font-bold px-10 lg:px-0 text-center lg:text-left">{section.header}</div>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 mt-2 max-w-2/3 px-10 lg:px-0 text-center lg:text-left">{section.title}</h2>
-        <p className="text-center lg:text-left text-xl mb-6">{section.description}</p>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 mt-2 max-w-2/3 px-10 lg:px-0 text-center lg:text-left">{section.title}</h2>
+        <p className="text-center lg:text-left text-xl mb-8">{section.description}</p>
         <div className="mx-auto w-fit lg:mx-0">
           <Button 
             link={section.button?.link || ''}
