@@ -11,6 +11,7 @@ import Image from "next/image";
 import { SwiperOptions } from "swiper/types";
 import { Manrope } from "next/font/google";
 import clsx from "clsx";
+import { ArrowButton } from "@/shared/ui";
 
 type Props = {
   section: typeof CONTENT['main'][number] & {type: 'feedback'};
@@ -48,16 +49,8 @@ const FeedbackSection: FC<Props> = ({section}) => {
     >
       <div className="font-bold text-center lg:text-left">{section.header}</div>
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
-      <div className="w-full flex gap-5">
-        <button onClick={() => swiper?.slidePrev()}>
-          <Image
-            className="hover:scale-105 transition-all"
-            alt={'<'}
-            src={'/svg/arrow-left.svg'}
-            width={50}
-            height={50}
-          />
-        </button>
+      <div className="w-full flex gap-5 items-center">
+        <ArrowButton className="shrink-0" onClick={() => swiper?.slidePrev()} />
         <Swiper
           {...sliderParams}
           onInit={e => setSwiper(e)}
@@ -69,15 +62,7 @@ const FeedbackSection: FC<Props> = ({section}) => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button onClick={() => swiper?.slideNext()}>
-          <Image
-            className="rotate-180 hover:scale-105 transition-all"
-            alt={'>'}
-            src={'/svg/arrow-left.svg'}
-            width={50}
-            height={50}
-          />
-        </button>
+        <ArrowButton className="shrink-0" onClick={() => swiper?.slideNext()} direction="right" />
       </div>
     </section>
   );
