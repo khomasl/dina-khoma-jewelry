@@ -35,3 +35,6 @@ npm run dev
 ## Demo
   - On Vercel  - https://dina-khoma-jewelry.vercel.app
   - On Netlify - https://dina-khoma-jewelry.netlify.app
+
+## Site
+  - https://dinakhoma.com

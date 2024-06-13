@@ -1,6 +1,6 @@
 // import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://dina-khoma-jewelry.vercel.app'
+export const baseUrl = 'https://dinakhoma.com'
 
 export default async function sitemap() {
   // let blogs = getBlogPosts().map((post) => ({

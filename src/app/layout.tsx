@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     default: 'Dina Khoma Jewelry',
     template: '%s | Dina Khoma Jewelry',
   },
-  description: 'This is Dina Khoma site.',
+  description: 'Dina Khoma Jewelry - унікальні прикраси ручної роботи. Спеціалізуюсь на виготовленні елегантних прикрас з перлів та полімерної глини. Кожен виріб - це світ елегантності та стилю. Відкрийте для себе постійно оновлюваний асортимент і персоналізовані прикраси, створені за вашими індивідуальними бажаннями.',
   openGraph: {
-    title: 'Dina Khoma Site',
-    description: 'This is Dina Khoma site.',
+    title: 'Dina Khoma Jewelry',
+    description: 'Dina Khoma Jewelry - унікальні прикраси ручної роботи. Спеціалізуюсь на виготовленні елегантних прикрас з перлів та полімерної глини. Кожен виріб - це світ елегантності та стилю. Відкрийте для себе постійно оновлюваний асортимент і персоналізовані прикраси, створені за вашими індивідуальними бажаннями.',
     url: baseUrl,
-    siteName: 'Dina Khoma Site',
+    siteName: 'Dina Khoma Jewelry',
     locale: 'uk_UA',
     type: 'website',
     // images: ["/logo.png"]
