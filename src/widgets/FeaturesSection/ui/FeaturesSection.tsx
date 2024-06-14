@@ -25,6 +25,7 @@ const FeaturesSection: FC<Props> = ({section}) => {
         <p className="text-center lg:text-left text-xl mb-8">{section.description}</p>
         <div className="mx-auto w-fit lg:mx-0">
           <Button 
+            className="mx-auto w-fit lg:mx-0"
             link={section.button?.link || ''}
             text={section.button?.title || ''} 
           />
