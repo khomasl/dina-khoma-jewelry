@@ -11,7 +11,7 @@ type Props = {
 
 const FeedbackCard: FC<Props> = ({feedback}) => {
   return (
-    <div className="flex flex-col items-center w-full h-full bg-white text-gray-900 px-4 py-6">
+    <div className="flex flex-col items-center w-full h-full bg-white text-gray-900 px-4 py-6 rounded-xl">
       <div className="relative w-14 aspect-square overflow-hidden rounded-full shrink-0">
         <Image
           className="object-cover"
