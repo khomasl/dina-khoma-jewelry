@@ -12,7 +12,7 @@ type Props = {
 const manrope = Manrope({
   subsets: ['latin', "cyrillic"],
 });
- 
+
 
 const CollectionSection: FC<Props> = ({section}) => {
   return (
