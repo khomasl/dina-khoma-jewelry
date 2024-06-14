@@ -1,11 +1,9 @@
 import 'src/base/styles/global.css';
 import type { Metadata } from 'next';
-// import { GeistSans } from 'geist/font/sans';
-// import { GeistMono } from 'geist/font/mono';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import { baseUrl } from '@/shared/utils/sitemap';
+import { BASE_URL as baseUrl, METADATA } from "@/shared/constants/common"
 import {Navbar, Footer} from '@/widgets';
 import { TopButton } from '@/shared/ui';
 
@@ -13,15 +11,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   icons: "/favicon.ico",
   title: {
-    default: 'Купити прикраси з полімерної глини | Dina Khoma Jewelry',
-    template: '%s | Dina Khoma Jewelry',
+    default: METADATA.title,
+    template: `%s | ${METADATA.siteName}`,
   },
-  description: 'Пташки. Пташки з петриківським розписом. Біла пташка. Пташка з малюнком. Чокери. Кольє. Полімерна глина. Перли. Фурнітура. Ручна робота. Вироби за індивідуальним замовленням. Доставка по Україні.',
+  description: METADATA.description, 
   openGraph: {
-    title: 'Купити прикраси з полімерної глини | Dina Khoma Jewelry',
-    description: 'Пташки. Пташки з петриківським розписом. Біла пташка. Пташка з малюнком. Чокери. Кольє. Полімерна глина. Перли. Фурнітура. Ручна робота. Вироби за індивідуальним замовленням. Доставка по Україні.',
+    title: METADATA.title,
+    description: METADATA.description,
     url: baseUrl,
-    siteName: 'Dina Khoma Jewelry',
+    siteName: METADATA.siteName,
     locale: 'uk_UA',
     type: 'website',
     images: ["/logo.png"]
@@ -48,11 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="uk"
-      className={cx(
-        'text-black bg-white dark:text-white dark:bg-black scroll-smooth',
-        // GeistSans.variable,
-        // GeistMono.variable
-      )}
+      className={cx('text-black bg-white dark:text-white dark:bg-black scroll-smooth')}
     >
       <body className="antialiased w-full h-full">
         <div className="w-full flex-auto min-w-0 min-h-screen flex flex-col overflow-hidden">

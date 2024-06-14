@@ -1,11 +1,18 @@
 const BREAKPOINT_LG = 1024;
 const BREAKPOINT_MD = 768;
 
+const BASE_URL = 'https://www.dinakhoma.com'
 const INSTAGRAM_URL = "https://www.instagram.com/dinakhoma/";
 const FACEBOOK_URL = "https://www.facebook.com/dina.khoma.5";
 const TELEGRAM_URL = "https://t.me/dina_khoma";
 const PHONE_NUMBER = "+380931070851";
 const EMAIL = "KhomaDina@gmail.com";
+
+const METADATA = {
+  title: 'Купити прикраси з полімерної глини | Dina Khoma Jewelry',
+  description: 'Пташки. Пташки з петриківським розписом. Біла пташка. Пташка з малюнком. Чокери. Кольє. Полімерна глина. Перли. Фурнітура. Ручна робота. Вироби за індивідуальним замовленням. Доставка по Україні.',
+  siteName: 'Dina Khoma Jewelry',
+}
 
 const CONTENT = {
   header: {
@@ -360,6 +367,8 @@ const CONTENT = {
 } as const;
 
 export { 
+  BASE_URL,
+  METADATA,
   CONTENT, 
   PHONE_NUMBER, 
   EMAIL, 
