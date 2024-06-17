@@ -28,8 +28,8 @@ const ProductCard: FC<Props> = ({product}) => {
           />
         </div>
         <div className="p-4">
-          <h4 className="min-h-[65px] md:min-h-[30px] lg:min-h-[65px] font-semibold text-lg mb-1">{product.title}</h4>
-          <p className="min-h-[160px] md:min-h-[60px] lg:min-h-[100px] text-sm text-gray-900 mb-2">{product.description}</p>
+          <h4 className="h-[65px] md:h-[30px] lg:h-[65px] xl:h-[30px] 2xl:h-[30px] font-semibold text-lg mb-1">{product.title}</h4>
+          <p className="h-[105px] md:h-[60px] lg:h-[100px] xl:h-[85px] 2xl:h-[65px] text-sm text-gray-900 mb-2 overflow-hidden">{product.description}</p>
           <div className="font-semibold text-lg text-right">{product.price}</div>
         </div>
       </Link>
