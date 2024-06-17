@@ -1,7 +1,7 @@
 const BREAKPOINT_LG = 1024;
 const BREAKPOINT_MD = 768;
 
-const BASE_URL = 'https://www.dinakhoma.com'
+const BASE_URL = 'https://dinakhoma.com'
 const INSTAGRAM_URL = "https://www.instagram.com/dinakhoma/";
 const FACEBOOK_URL = "https://www.facebook.com/dina.khoma.5";
 const TELEGRAM_URL = "https://t.me/dina_khoma";
