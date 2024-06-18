@@ -27,7 +27,7 @@ const Contacts: FC<Props> = ({contacts, className}) => {
           className="transition-all hover:text-neutral-300 dark:hover:text-neutral-200 flex align-middle relative py-1 my-1 text-base"
         >
           <Image
-            alt={contact.title}
+            alt=""
             src={require(`/public/svg/${contact.src}?url`)}
             width={16}
             height={16}

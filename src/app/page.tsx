@@ -23,4 +23,4 @@ export default function Page() {
             .with({type: "slider"}, (section) => <SliderSection className="hidden lg:flex" section={section} />)
             .otherwise(() => null)
         )
-  }
+}
