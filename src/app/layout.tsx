@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   icons: "/favicon.ico",
   title: {
     default: METADATA.title,
-    template: `${METADATA.siteName} | %s`,
+    template: `%s | ${METADATA.siteName}`,
   },
   description: METADATA.description, 
   openGraph: {
