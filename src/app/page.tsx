@@ -1,4 +1,4 @@
-import { match } from "ts-pattern";
+import { match, P } from "ts-pattern";
 
 import { 
     AboutSection, 
@@ -23,4 +23,4 @@ export default function Page() {
             .with({type: "slider"}, (section) => <SliderSection className="hidden lg:flex" section={section} />)
             .otherwise(() => null)
         )
-  }
+}

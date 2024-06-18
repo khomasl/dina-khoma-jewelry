@@ -12,10 +12,10 @@ const MenuContent = () => {
         <Link className="block text-2xl mb-10 text-gray-400 font-bold" href={`mailTo:${email.link}`}>{email.title}</Link>
         <div className="flex justify-start gap-2 text-violet-400 font-bold">
           {socials.map((social) => (
-            <>
+            <div key={social.link}>
               <Link href={social.link}>{social.title}</Link>
               <div className="border border-l last:hidden" />
-            </>
+            </div>
           ))}
         </div>
       </div>

@@ -11,7 +11,7 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
 
 type Props = {
-  section: typeof CONTENT['main'][number] & {type: "slider"},
+  section: typeof CONTENT['main'][number] & {type: "slider"}
   className?: string;
 };
 
@@ -50,10 +50,10 @@ const SliderSection: FC<Props> = ({section, className}) => {
         onInit={e => setSwiper(e)}
         className="w-full"
       >
-        {section.items.map(item => (
+        {section.items?.map(item => (
           <SwiperSlide key={item.src}>
             <div className="relative overflow-hidden rounded-xl w-full aspect-square">
-              <Link href={item.link}>
+              <Link href={item.link} aria-label={item.src}>
                 <Image
                   className="absolute top-0 left-0 w-full h-full object-cover"
                   alt={''}

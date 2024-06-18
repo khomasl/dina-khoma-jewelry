@@ -37,7 +37,7 @@ const AboutSection: FC<Props> = ({section}) => {
         <p className="text-xl text-gray-900 mb-4 text-center lg:text-left">{section.description}</p>
         <div className="flex justify-between mb-8 sx:px-10 lg:px-0 xl:mr-10">
           {section.items.map(item => (
-            <div className="flex gap-2 md:gap-4 items-center">
+            <div key={item.title} className="flex gap-2 md:gap-4 items-center">
               <span className="text-2xl md:text-3xl font-bold">{item.title}</span>
               <span className="text-gray-800 text-base">{item.description}</span>
             </div>
