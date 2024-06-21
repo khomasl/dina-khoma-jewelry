@@ -54,7 +54,7 @@ const FeedbackSection: FC<Props> = ({section}) => {
         <Swiper
           {...sliderParams}
           onInit={e => setSwiper(e)}
-          className="w-full aspect-[0.5] ss:aspect-[0.9] sx:aspect-[1.5] sm:aspect-[2.7] xl:aspect-[4]"
+          className="w-full aspect-[0.5] ss:aspect-[0.8] sx:aspect-[1.4] sm:aspect-[2.2] md:aspect-[2.5] xl:aspect-[4]"
         >
           {section.items.map(item => (
             <SwiperSlide key={item.src}>
