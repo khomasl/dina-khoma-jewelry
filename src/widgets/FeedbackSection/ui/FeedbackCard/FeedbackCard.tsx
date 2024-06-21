@@ -22,7 +22,7 @@ const FeedbackCard: FC<Props> = ({feedback}) => {
       </div>
       <h2 className="text-violet-400 text-sm mt-3 mb-3">{feedback.title}</h2>
       <div className="w-full border border-b-violet-400 mb-3"/>
-      <h3 className="line-clamp-12 text-center text-sm md:text-base px-3 overflow-scroll">{feedback.description}</h3>
+      <h3 className="line-clamp-12 text-center text-sm md:text-base px-3 overflow-y-auto">{feedback.description}</h3>
     </div>
   )
 };
