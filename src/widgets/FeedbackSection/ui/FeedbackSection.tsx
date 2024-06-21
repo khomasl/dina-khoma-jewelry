@@ -47,8 +47,8 @@ const FeedbackSection: FC<Props> = ({section}) => {
         manrope.className
       )}
     >
-      <h1 className="font-bold text-center lg:text-left">{section.header}</h1>
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h2>
+      <p className="font-bold text-center lg:text-left">{section.header}</p>
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h1>
       <div className="w-full flex gap-5 items-center">
         <ArrowButton className="shrink-0" onClick={() => swiper?.slidePrev()} />
         <Swiper

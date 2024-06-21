@@ -16,7 +16,7 @@ const Button: FC<Props> = ({text, link, className}) => {
     >
       <button 
         className={clsx(
-          "bg-gray-400 rounded-lg py-4 px-8 font-bold text-center text-2xl text-white hover:opacity-90 transition-all", 
+          "bg-gray-400 rounded-lg py-4 px-8 font-bold text-center text-xl text-white hover:opacity-90 transition-all", 
           className
         )}
       >

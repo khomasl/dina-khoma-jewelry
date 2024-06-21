@@ -13,7 +13,7 @@ type Props = {
 const Contacts: FC<Props> = ({contacts, className}) => {
   return (
     <div className={clsx("text-xl max-w-56", className)}>
-      <h5 className="text-xl font-bold mb-2">{contacts.title}</h5>
+      <h1 className="text-xl font-bold mb-2">{contacts.title}</h1>
       {contacts.contacts.map((contact) => (
         <Link
           key={contact.title}

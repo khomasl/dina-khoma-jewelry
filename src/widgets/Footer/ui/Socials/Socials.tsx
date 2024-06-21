@@ -12,7 +12,7 @@ type Props = {
 const Socials: FC<Props> = ({socials, className}) => {
   return (
     <div className={className}>
-      <h5 className="text-xl font-bold mb-2">{socials.title}</h5>
+      <h1 className="text-xl font-bold mb-2">{socials.title}</h1>
       <div className="flex ">
         {socials.socials.map((social) => (
           <Link

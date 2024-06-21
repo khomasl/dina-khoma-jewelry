@@ -12,7 +12,7 @@ type Props = {
 const Info: FC<Props> = ({info, className}) => {
   return (
     <div className={clsx("hidden md:block text-xl max-w-56", className)}>
-      <h5 className="text-xl font-bold mb-2">{info.title}</h5>
+      <h1 className="text-xl font-bold mb-2">{info.title}</h1>
       <>
         {info.nav.map((item) => (
           <Link

@@ -16,9 +16,9 @@ const Promo: FC<Props> = ({promo, className}) => {
       className
     )}
     >
-      <h5 className="max-w-[130px] text-xl font-bold">{promo.title}</h5>
+      <h1 className="max-w-[130px] text-xl font-bold">{promo.title}</h1>
       <div className="flex gap-4 justify-between items-center ">
-        <p className="text-base xl:text-2xl">{promo.description}</p>
+        <h2 className="text-base xl:text-2xl">{promo.description}</h2>
         <div className="min-w-[120px] md:min-w-[160px] text-lg text-center md:text-2xl border border-gray rounded-md p-2">
           {promo.code}
         </div>
