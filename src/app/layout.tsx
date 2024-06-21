@@ -9,12 +9,24 @@ import { TopButton } from '@/shared/ui';
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  icons: "/favicon.ico",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
+  },
+  manifest: "/site.webmanifest",
   title: {
     default: METADATA.title,
     template: `%s | ${METADATA.siteName}`,
+    // absolute: `%s | ${METADATA.siteName}`, 
   },
   description: METADATA.description, 
+  keywords: METADATA.keywords,
   openGraph: {
     title: METADATA.title,
     description: METADATA.description,
