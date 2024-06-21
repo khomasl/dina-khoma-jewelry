@@ -22,7 +22,7 @@ module.exports = {
         },
         'brown': '#603813',
         'gray': {
-          50: '#FEFEFE',
+          50:  '#FEFEFE',
           400: '#A49898',
           800: '#120021',
           900: '#011110'
@@ -30,9 +30,12 @@ module.exports = {
 
       },
       screens: {
-        'ss': '375px',
-        'sx': '480px',
-        'xl': '1280px',
+        'ss':  '375px',
+        'sx':  '480px',
+        'sm':  '640px',
+        'md':  '768px',
+        'lg':  '1024px',
+        'xl':  '1280px',
         '2xl': '1340px',
       }
     }
