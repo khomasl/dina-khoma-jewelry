@@ -34,6 +34,7 @@ const HeroSection: FC<Props> = ({section}) => {
         <Image
           className="object-cover"
           alt={section.title || ''}
+          title={section.title + '. ' + section.description || ''}
           src={section.src}
           fill
         />
