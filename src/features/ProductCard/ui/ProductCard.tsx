@@ -23,6 +23,7 @@ const ProductCard: FC<Props> = ({product}) => {
           <Image
             className="absolute top-0 left-0 w-full h-full object-cover"
             alt={product.title || ''}
+            title={product.title + '. ' + product.description || ''}
             src={product.src || '/no-photo.png'}
             fill
           />

@@ -26,6 +26,7 @@ const AboutSection: FC<Props> = ({section}) => {
           <Image
             className="absolute top-0 left-0 w-full h-full object-cover"
             alt={section.title || ''}
+            title={section.title + '. ' + section.description || ''}
             src={section.src}
             fill
           />
