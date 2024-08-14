@@ -1,6 +1,6 @@
 "use client";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 import { ArrowButton } from "@/shared/ui";
 import clsx from "clsx";
 import { Manrope } from "next/font/google";
@@ -11,7 +11,7 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
 
 type Props = {
-  section: typeof CONTENT['main'][number] & {type: "slider"}
+  section: typeof CONTENT_HOMEPAGE['main'][number] & {type: "slider"}
   className?: string;
 };
 

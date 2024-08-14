@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
-const { phone } = CONTENT.header;
+const { phone } = CONTENT_HOMEPAGE.header;
 
 const Phone = () => (
   <Link

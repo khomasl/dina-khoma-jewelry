@@ -9,10 +9,10 @@ import {
     SliderSection 
 } from "@/widgets";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
 export default function Page() {
-    return CONTENT.main.map(item =>
+    return CONTENT_HOMEPAGE.main.map(item =>
         match(item)
             .with({type: "hero"}, (section) => <HeroSection section={section} />)
             .with({type: "aboutMe"}, (section) => <AboutSection section={section} />)

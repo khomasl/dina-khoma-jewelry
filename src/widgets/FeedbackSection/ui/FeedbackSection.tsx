@@ -5,7 +5,7 @@ import { FC, useState } from "react";
 import { Swiper, SwiperClass, SwiperProps, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 import { FeedbackCard } from ".";
 import Image from "next/image";
 import { SwiperOptions } from "swiper/types";
@@ -14,7 +14,7 @@ import clsx from "clsx";
 import { ArrowButton } from "@/shared/ui";
 
 type Props = {
-  section: typeof CONTENT['main'][number] & {type: 'feedback'};
+  section: typeof CONTENT_HOMEPAGE['main'][number] & {type: 'feedback'};
 };
 
 
