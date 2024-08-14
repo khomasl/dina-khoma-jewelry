@@ -6,7 +6,7 @@ export default function Page({params}) {
     if (!post) return notFound();
 
     return (
-        <article className='max-w-[1000px] p-5 mx-auto prose lg:prose-lg'>
+        <article className='max-w-[1000px] p-5 mx-auto'>
             <h1>{post.title}</h1>
             <p>{post.id}</p>
             <div
