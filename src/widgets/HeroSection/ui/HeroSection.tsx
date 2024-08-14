@@ -6,11 +6,11 @@ import Image from 'next/image';
 import { Poppins } from "next/font/google";
 import clsx from "clsx";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 import { Button } from "@/shared/ui";
 
 type Props = {
-  section: typeof CONTENT['main'][number] & {type: "hero"}
+  section: typeof CONTENT_HOMEPAGE['main'][number] & {type: "hero"}
 }
 
 const poppins = Poppins({

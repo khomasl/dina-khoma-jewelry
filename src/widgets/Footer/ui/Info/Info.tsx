@@ -1,11 +1,11 @@
 import { FC } from "react";
 import Link from "next/link";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 import clsx from "clsx";
 
 type Props = {
-  info: typeof CONTENT['footer']['info'];
+  info: typeof CONTENT_HOMEPAGE['footer']['info'];
   className?: string;
 }
 
@@ -16,11 +16,11 @@ const Info: FC<Props> = ({info, className}) => {
       <>
         {info.nav.map((item) => (
           <Link
-            key={item}
-            href={"#"}
+            key={item.title}
+            href={item.link}
             className="transition-all hover:text-neutral-300 dark:hover:text-neutral-200 flex align-middle relative py-1 my-1 text-base"
           >
-            {item}
+            {item.title}
           </Link>
         ))}
       </>

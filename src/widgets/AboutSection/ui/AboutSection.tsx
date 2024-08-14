@@ -4,10 +4,10 @@ import { Manrope } from 'next/font/google';
 import clsx from "clsx";
 
 import { Button } from "@/shared/ui";
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
 type Props = {
-  section: typeof CONTENT['main'][number] & {type: "aboutMe"}
+  section: typeof CONTENT_HOMEPAGE['main'][number] & {type: "aboutMe"}
 }
 
 const manrope = Manrope({

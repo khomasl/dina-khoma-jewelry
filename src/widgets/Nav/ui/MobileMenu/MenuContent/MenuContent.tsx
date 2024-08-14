@@ -1,9 +1,9 @@
 import { Menu } from "@/features";
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 import Link from "next/link";
 
 const MenuContent = () => {
-  const { socials, phone, email} = CONTENT.header;
+  const { socials, phone, email} = CONTENT_HOMEPAGE.header;
   return (
     <div className="flex flex-col justify-between h-full pb-6">
       <Menu type="vertical" />

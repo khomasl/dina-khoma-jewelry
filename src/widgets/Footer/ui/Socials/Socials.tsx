@@ -2,10 +2,10 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
 type Props = {
-  socials: typeof CONTENT['footer']['mySocials'];
+  socials: typeof CONTENT_HOMEPAGE['footer']['mySocials'];
   className?: string
 }
 

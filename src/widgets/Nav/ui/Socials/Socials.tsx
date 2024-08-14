@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
-const { socials } = CONTENT.header;
+const { socials } = CONTENT_HOMEPAGE.header;
 
 const Socials = () => (
   <div className="hidden lg:flex flex-row space-x-1 ml-5">

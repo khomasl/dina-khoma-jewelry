@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 import { Contacts, Logo, Info, Socials, Promo } from ".";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
 const ubuntu = Ubuntu({
   subsets: ['latin', "cyrillic"],
@@ -13,7 +13,7 @@ const ubuntu = Ubuntu({
 });
 
 export default function Footer() {
-  const { logo, info, myContacts, mySocials, promo } = CONTENT.footer;
+  const { logo, info, myContacts, mySocials, promo } = CONTENT_HOMEPAGE.footer;
   return (
     <footer 
       className={clsx(
