@@ -18,6 +18,8 @@ Clone
 git clone https://github.com/khomasl/dina-khoma-jewelry.git
 ```
 
+Then
+
 ```bash
 cd dina-khoma-jewelry
 ```

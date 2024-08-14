@@ -7,8 +7,8 @@ export default function Page({params}) {
 
     return (
         <article className='max-w-[1000px] p-5 mx-auto'>
-            <h1>{post.title}</h1>
-            <p>{post.id}</p>
+            <h1 className="font-bold text-violet-400 text-xl text-left">{post.title}</h1>
+            <p className="font-bold">{post.date}</p>
             <div
                 dangerouslySetInnerHTML={{__html: post.content}}
             />

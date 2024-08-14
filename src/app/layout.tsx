@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     // absolute: `%s | ${METADATA.siteName}`, 
   },
   description: METADATA.description, 
-  keywords: METADATA.keywords,
   openGraph: {
     title: METADATA.title,
     description: METADATA.description,
