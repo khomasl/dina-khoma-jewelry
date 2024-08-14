@@ -2,11 +2,11 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { CONTENT, EMAIL, PHONE_NUMBER } from "@/shared/constants/common";
+import { CONTENT_HOMEPAGE, EMAIL, PHONE_NUMBER } from "@/shared/constants/common";
 import clsx from "clsx";
 
 type Props = {
-  contacts: typeof CONTENT['footer']['myContacts'];
+  contacts: typeof CONTENT_HOMEPAGE['footer']['myContacts'];
   className?: string;
 }
 

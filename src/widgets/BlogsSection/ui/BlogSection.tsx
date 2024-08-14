@@ -3,10 +3,10 @@ import { Manrope } from 'next/font/google';
 import clsx from "clsx";
 
 import { ProductCard } from "@/features";
-import { CONTENT_HOMEPAGE } from "@/shared/constants";
+import {CONTENT_BLOG} from "@/shared/constants/common";
 
 type Props = {
-  section: typeof CONTENT_HOMEPAGE['main'][number] & {type: "currentCollections" | "otherCollections"}
+  section: typeof CONTENT_BLOG[number]
 };
 
 const manrope = Manrope({
@@ -14,7 +14,7 @@ const manrope = Manrope({
 });
 
 
-const CollectionSection: FC<Props> = ({section}) => {
+const BlogSection: FC<Props> = ({section}) => {
   return (
     <section id="collection" className={clsx(manrope.className, "main-container")}>
       <p className="font-bold text-violet-400 text-center lg:text-left">{section.header}</p>
@@ -26,4 +26,4 @@ const CollectionSection: FC<Props> = ({section}) => {
   );
 };
 
-export default CollectionSection;
+export default BlogSection;

@@ -15,19 +15,20 @@ const METADATA = {
   siteName: 'Dina Khoma Jewelry',
 }
 
-const CONTENT = {
+const CONTENT_HOMEPAGE = {
   header: {
     logo: {
       src: "/logo.png",
-      title: "Dina Khoma Jewelry Logo"
+      title: "Dina Khoma Jewelry Logo",
+      link: "/",
     },
     nav: [
       {
-        link: "#about",
+        link: "/pages/about",
         title: "Про мене"
       }, 
       {
-        link: "#collection",
+        link: "/collection",
         title: "Мої вироби"
       }, 
       {
@@ -134,7 +135,7 @@ const CONTENT = {
       header: "ПРО МЕНЕ",
       title: "Майстерність поєднується з елегантністю",
       description: "Кожен виріб виготовлено вручну, поєднуючи традиції та сучасність. Відчуйте розкіш моїх ексклюзивних колекцій.",
-      items: [ 
+      items: [
         {
           title: "800+",
           description: "КЛІЄНТІВ",
@@ -306,7 +307,12 @@ const CONTENT = {
     },
     info: {
       title: "Інформація",
-      nav: ["Home", "Про мене", "Мої вироби", "Відгуки"],
+      nav: [
+        {title:"Home", link: '/'},
+        {title:"Про мене",  link: '/pages/about'},
+        {title:"Мої вироби",  link: '/collection'},
+        {title: "Відгуки", link: '#feedbacks'},
+      ],
     },
     myContacts: {
       title: "Деталі для контакту",
@@ -366,11 +372,227 @@ const CONTENT = {
   },
 } as const;
 
+const CONTENT_ABOUT = [
+  {
+    type: "aboutMe",
+    header: "ПРО МЕНЕ",
+    title: "Майстерність поєднується з елегантністю",
+    description: "Кожен виріб виготовлено вручну, поєднуючи традиції та сучасність. Відчуйте розкіш моїх ексклюзивних колекцій.",
+    items: [
+      {
+        title: "800+",
+        description: "КЛІЄНТІВ",
+      },
+      {
+        title: "1500+",
+        description: "ВИРОБІВ",
+      }
+    ],
+    button: {
+      title: "Дивитись колекцію",
+      link: INSTAGRAM_URL,
+    },
+    src: "/about.jpg",
+  },
+
+  {
+    type: "features",
+    header: "ОСОБЛИВОСТІ",
+    title: "Досвід та якісні матеріали",
+    description: "Більше 10 років досвіду. Використовую тільки якісні матеріали.",
+    button: {
+      title: "Дізнатись більше",
+      link: INSTAGRAM_URL,
+    },
+    src: "/features.jpg",
+  },
+
+  {
+    type: "aboutMe",
+    header: "ПРО МЕНЕ",
+    title: "Майстерність поєднується з елегантністю",
+    description: "Кожен виріб виготовлено вручну, поєднуючи традиції та сучасність. Відчуйте розкіш моїх ексклюзивних колекцій.",
+    items: [
+      {
+        title: "800+",
+        description: "КЛІЄНТІВ",
+      },
+      {
+        title: "1500+",
+        description: "ВИРОБІВ",
+      }
+    ],
+    button: {
+      title: "Дивитись колекцію",
+      link: INSTAGRAM_URL,
+    },
+    src: "/about.jpg",
+  },
+] as const;
+
+const CONTENT_COLLECTION = [
+  {
+    type: "otherCollections",
+    header: "МОЇ ВИРОБИ",
+    title: "Різні вироби",
+    items: [
+      {
+        title: "Підвіска на шнурочку",
+        description: "Підвіска з полімерної глини, шнурочок з екозамші 150 см",
+        price: "650 грн",
+        src: "/other-collections/1.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: "Сережки",
+        description: "Полімерна глина, якісна фурнітура з позолотою 18к",
+        price: "280 грн",
+        src: "/other-collections/2.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: 'Браслет "Ластівка"',
+        description: "Пташка з полімерної глини, ручний розпис, ланцюжок з позолотою",
+        price: "530 грн",
+        src: "/other-collections/3.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: 'Підвіска "Серце"',
+        description: "Підвіска з полімерної глини, ручний розпис, оксамитова стрічка 150 см, фурнітура з позолотою",
+        price: "650 грн",
+        src: "/other-collections/4.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: "Малиновий чокер",
+        description: "Ягідки з полімерної глини, скляні намистини, нержавіюча сталь",
+        price: "680 грн",
+        src: "/other-collections/5.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: 'Сережки "Глечики"',
+        description: "Полімерна глина, петриківський розпис, нержавіюча сталь",
+        price: "500 грн",
+        src: "/other-collections/6.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: 'Сережки "Обліпиха"',
+        description: "Полімерна глина, фурнітура бронзова",
+        price: "500 грн",
+        src: "/other-collections/7.jpg",
+        link: INSTAGRAM_URL,
+      },
+      {
+        title: 'Сережки "Ластівки"',
+        description: "Полімерна глина, гіпоалергенний сплав",
+        price: "320 грн",
+        src: "/other-collections/8.jpg",
+        link: INSTAGRAM_URL,
+      },
+    ],
+  },
+] as const;
+
+const CONTENT_BLOG = [
+  {
+    type: "otherCollections",
+    header: "МОЇ ВИРОБИ",
+    title: "Різні вироби",
+    items: [
+      {
+        title: "Підвіска на шнурочку",
+        src: "/other-collections/1.jpg",
+        link: '/blog/a1',
+      },
+      {
+        title: "Сережки",
+        description: "Полімерна глина, якісна фурнітура з позолотою 18к",
+        src: "/other-collections/2.jpg",
+        link: '/blog/a2',
+      },
+      {
+        title: 'Браслет "Ластівка"',
+        description: "Пташка з полімерної глини, ручний розпис, ланцюжок з позолотою",
+        src: "/other-collections/3.jpg",
+        link: '/blog/a3',
+      },
+      {
+        title: 'Підвіска "Серце"',
+        description: "Підвіска з полімерної глини, ручний розпис, оксамитова стрічка 150 см, фурнітура з позолотою",
+        src: "/other-collections/4.jpg",
+        link: '/blog/a4',
+      },
+    ],
+  },
+] as const;
+
+const BLOG_POSTS = [
+  {
+    id: 'a1',
+    title: 'Підвіска на шнурочку',
+    content: `<h3>Examples from blog.alexanderseville.com</h3>
+
+<p>A place to see my code samples in action, and to contribute any improvements you might have.</p>
+
+<ul>
+  <li>Partial Views with Underscore Templates - <a href="partial-views-underscore-templating/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26829903457/partial-views-in-underscore-templates">Blog Post</a></li>
+  <li>Simple Data Binding with Backbone - <a href="simple-data-binding-in-backbone/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26901510507/simple-data-binding-in-backbone-part-1-of-2">Blog Post</a></li>
+</ul>`,
+    price: '650 грн',
+  },
+  {
+    id: 'a2',
+    title: 'Підвіска на шнурочку',
+    content: `<h3>Examples from blog.alexanderseville.com</h3>
+
+<p>A place to see my code samples in action, and to contribute any improvements you might have.</p>
+
+<ul>
+  <li>Partial Views with Underscore Templates - <a href="partial-views-underscore-templating/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26829903457/partial-views-in-underscore-templates">Blog Post</a></li>
+  <li>Simple Data Binding with Backbone - <a href="simple-data-binding-in-backbone/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26901510507/simple-data-binding-in-backbone-part-1-of-2">Blog Post</a></li>
+</ul>`,
+    price: '650 грн',
+  },
+  {
+    id: 'a3',
+    title: 'Підвіска на шнурочку',
+    content: `<h3>Examples from blog.alexanderseville.com</h3>
+
+<p>A place to see my code samples in action, and to contribute any improvements you might have.</p>
+
+<ul>
+  <li>Partial Views with Underscore Templates - <a href="partial-views-underscore-templating/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26829903457/partial-views-in-underscore-templates">Blog Post</a></li>
+  <li>Simple Data Binding with Backbone - <a href="simple-data-binding-in-backbone/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26901510507/simple-data-binding-in-backbone-part-1-of-2">Blog Post</a></li>
+</ul>`,
+    price: '650 грн',
+  },
+  {
+    id: 'a4',
+    title: 'Підвіска на шнурочку',
+    content: `<h3>Examples from blog.alexanderseville.com</h3>
+
+<p>A place to see my code samples in action, and to contribute any improvements you might have.</p>
+
+<ul>
+  <li>Partial Views with Underscore Templates - <a href="partial-views-underscore-templating/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26829903457/partial-views-in-underscore-templates">Blog Post</a></li>
+  <li>Simple Data Binding with Backbone - <a href="simple-data-binding-in-backbone/example.htm">Example</a> - <a href="http://blog.alexanderseville.com/post/26901510507/simple-data-binding-in-backbone-part-1-of-2">Blog Post</a></li>
+</ul>`,
+    price: '650 грн',
+  }
+]
+
 export { 
   BASE_URL,
   METADATA,
-  CONTENT, 
-  PHONE_NUMBER, 
+  CONTENT_HOMEPAGE,
+  CONTENT_ABOUT,
+  CONTENT_COLLECTION,
+  CONTENT_BLOG,
+  BLOG_POSTS,
+  PHONE_NUMBER,
   EMAIL, 
   BREAKPOINT_LG, 
   BREAKPOINT_MD

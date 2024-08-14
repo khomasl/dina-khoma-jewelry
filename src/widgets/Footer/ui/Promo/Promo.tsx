@@ -1,10 +1,10 @@
 import { FC } from "react";
 import clsx from "clsx";
 
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
 type Props = {
-  promo: typeof CONTENT['footer']['promo'];
+  promo: typeof CONTENT_HOMEPAGE['footer']['promo'];
   className?: string;
 }
 

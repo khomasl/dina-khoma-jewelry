@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { CONTENT } from "@/shared/constants";
+import { CONTENT_HOMEPAGE } from "@/shared/constants";
 import clsx from "clsx";
 import { FC } from "react";
 
-const { nav } = CONTENT.header;
+const { nav } = CONTENT_HOMEPAGE.header;
 
 type Props = {
   className?: string;
