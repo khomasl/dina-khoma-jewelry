@@ -61,7 +61,9 @@ export default buildConfig({
   editor: defaultLexical,
   db: sqliteAdapter({
     client: {
-      url: process.env.DATABASE_URI || '',
+      // TODO fix this
+      url: //process.env.DATABASE_URI ||
+        'file:./payload3.db',
     },
   }),
   collections: [Pages, Posts, Media, Categories, Users],
@@ -71,7 +73,9 @@ export default buildConfig({
     ...plugins,
     // storage-adapter-placeholder
   ],
-  secret: process.env.PAYLOAD_SECRET,
+  // TODO fix this
+  secret: '21d0c88a12f1cabe34e533c2',
+  // secret: process.env.PAYLOAD_SECRET,
   sharp,
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
