@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { Manrope } from 'next/font/google';
 import clsx from "clsx";
+import { CollectionSection as CollectionSectionType } from '@/payload-types'
 
 import { ProductCard } from "@/features";
-import { CONTENT_HOMEPAGE } from "@/shared/constants";
 
 type Props = {
-  section: typeof CONTENT_HOMEPAGE['main'][number] & {type: "currentCollections" | "otherCollections"}
+  section:  CollectionSectionType;
 };
 
 const manrope = Manrope({
@@ -20,7 +20,7 @@ const CollectionSection: FC<Props> = ({section}) => {
       <p className="font-bold text-violet-400 text-center lg:text-left">{section.header}</p>
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 mt-4 max-w-2/3 text-center lg:text-left">{section.title}</h1>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-        {section.items.map(item => <ProductCard key={item.src} product={item} /> )}
+        {section.products?.map(item => <ProductCard key={item?.link} product={item} /> )}
       </div>
     </section>
   );
