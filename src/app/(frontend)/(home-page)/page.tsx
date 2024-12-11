@@ -39,7 +39,7 @@ export default async function Page() {
 
   console.log('page', page)
 
-    return page.layout.map(item =>
+    return page?.layout.map(item =>
         match(item)
             .with({blockType: 'hero-section'}, (section) => <HeroSection section={section} />)
           .with({blockType: 'collection-section'}, (section) => <CollectionSection section={section} />)
