@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
 
-import { PayloadRedirects } from '@/components/PayloadRedirects'
-import configPromise from '@payload-config'
+import { PayloadRedirects } from '@/modules/admin/components/PayloadRedirects'
+import configPromise from '@/modules/admin/payload.config'
 import { getPayload } from 'payload'
 import { draftMode } from 'next/headers'
 import React, { cache } from 'react'
-import { homeStatic } from '@/endpoints/seed/home-static'
+import { homeStatic } from '@/modules/admin/endpoints/seed/home-static'
 
-import type { Page as PageType } from '@/payload-types'
+import type { Page as PageType } from '@/modules/admin/payload-types'
 
-import { RenderBlocks } from '@/blocks/RenderBlocks'
-import { RenderHero } from '@/heros/RenderHero'
-import { generateMeta } from '@/utilities/generateMeta'
+import { RenderBlocks } from '@/modules/admin/blocks/RenderBlocks'
+import { RenderHero } from '@/modules/admin/heros/RenderHero'
+import { generateMeta } from '@/modules/admin/utilities/generateMeta'
 import PageClient from './page.client'
-import { LivePreviewListener } from '@/components/LivePreviewListener'
+import { LivePreviewListener } from '@/modules/admin/components/LivePreviewListener'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })

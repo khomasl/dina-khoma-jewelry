@@ -2,13 +2,13 @@ import { match } from "ts-pattern";
 
 import {
     HeroSection,
-} from "@/widgets";
+} from "src/modules/website/widgets";
 
 import { cache } from 'react'
 import { draftMode } from 'next/headers'
 import { getPayload } from 'payload'
-import configPromise from '@payload-config'
-import {CollectionSection} from "@/widgets/CollectionSection";
+import configPromise from '@/modules/admin/payload.config'
+import {CollectionSection} from "@/modules/website/widgets/CollectionSection";
 
 const queryPageBySlug = cache(async ({ slug }: { slug: string }) => {
   const { isEnabled: draft } = await draftMode()
@@ -41,7 +41,7 @@ export default async function Page() {
 
     return page?.layout.map(item =>
         match(item)
-            .with({blockType: 'hero-section'}, (section) => <HeroSection section={section} />)
+          .with({blockType: 'hero-section'}, (section) => <HeroSection section={section} />)
           .with({blockType: 'collection-section'}, (section) => <CollectionSection section={section} />)
             // .with({type: "aboutMe"}, (section) => <AboutSection section={section} />)
             // .with({type: "features"}, (section) => <FeaturesSection section={section} />)
