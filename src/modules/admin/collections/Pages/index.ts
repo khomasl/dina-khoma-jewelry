@@ -22,6 +22,7 @@ import {
 } from '@payloadcms/plugin-seo/fields'
 import { HeroSection } from '@/modules/admin/blocks/HeroSection/config'
 import {CollectionSection} from "@/modules/admin/blocks/CollectionSection/config";
+import {AboutSection} from "@/modules/admin/blocks/AboutSection/config";
 
 export const Pages: CollectionConfig<'pages'> = {
   slug: 'pages',
@@ -76,7 +77,7 @@ export const Pages: CollectionConfig<'pages'> = {
             {
               name: 'layout',
               type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock, HeroSection, CollectionSection],
+              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock, HeroSection, CollectionSection, AboutSection],
               required: true,
               admin: {
                 initCollapsed: true,

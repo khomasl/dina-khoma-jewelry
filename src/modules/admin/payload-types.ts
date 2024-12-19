@@ -127,6 +127,7 @@ export interface Page {
     | FormBlock
     | HeroSection
     | CollectionSection
+    | AboutSection
   )[];
   meta?: {
     title?: string | null;
@@ -673,6 +674,36 @@ export interface CollectionSection {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "AboutSection".
+ */
+export interface AboutSection {
+  header?: string | null;
+  title?: string | null;
+  description?: string | null;
+  link: {
+    type?: ('reference' | 'custom') | null;
+    newTab?: boolean | null;
+    reference?: {
+      relationTo: 'pages';
+      value: number | Page;
+    } | null;
+    url?: string | null;
+    label: string;
+  };
+  image: number | Media;
+  items?:
+    | {
+        title?: string | null;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'about-section';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -960,6 +991,32 @@ export interface PagesSelect<T extends boolean = true> {
                     price?: T;
                     link?: T;
                     image?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        'about-section'?:
+          | T
+          | {
+              header?: T;
+              title?: T;
+              description?: T;
+              link?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    reference?: T;
+                    url?: T;
+                    label?: T;
+                  };
+              image?: T;
+              items?:
+                | T
+                | {
+                    title?: T;
+                    description?: T;
                     id?: T;
                   };
               id?: T;

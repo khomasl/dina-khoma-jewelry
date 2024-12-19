@@ -10,37 +10,22 @@ import {
 import { linkGroup } from '@/modules/admin/fields/linkGroup'
 import { link } from '@/modules/admin/fields/link'
 
-export const HeroSection: Block = {
+export const AboutSection: Block = {
   slug: 'about-section',
   interfaceName: 'AboutSection',
   fields: [
+    {
+      name: 'header',
+      type: 'text',
+    },
     {
       name: 'title',
       type: 'text',
       label: 'Title',
     },
     {
-      name: 'header',
-      type: 'text',
-      label: 'Header',
-    },
-    {
       name: 'description',
       type: 'text',
-    },
-    {
-      name: 'items',
-      type: 'array',
-      fields:[
-        {
-          name: 'title',
-          type: 'text',
-        },
-        {
-          name: 'description',
-          type: 'text',
-        },
-      ]
     },
     link({
       appearances: false,
@@ -50,6 +35,20 @@ export const HeroSection: Block = {
       name: 'image',
       relationTo: 'media',
       required: true,
+    },
+    {
+      name: 'items',
+      type: 'array',
+      fields: [
+        {
+          name: 'title',
+          type: 'text',
+        },
+        {
+          name: 'description',
+          type: 'text',
+        },
+      ],
     }
   ],
   labels: {

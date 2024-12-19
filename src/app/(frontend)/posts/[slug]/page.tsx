@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { RelatedPosts } from '@/modules/admin/blocks/RelatedPosts/Component'
 import { PayloadRedirects } from '@/modules/admin/components/PayloadRedirects'
-import configPromise from '@payload-config'
+import configPromise from '@/modules/admin/payload.config'
 import { getPayload } from 'payload'
 import { draftMode } from 'next/headers'
 import React, { cache } from 'react'
