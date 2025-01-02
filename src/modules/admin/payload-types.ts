@@ -1422,6 +1422,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface Header {
   id: number;
+  logo?: (number | null) | Media;
   navItems?:
     | {
         link: {
@@ -1437,6 +1438,24 @@ export interface Header {
         id?: string | null;
       }[]
     | null;
+  socialLinks?:
+    | {
+        image?: (number | null) | Media;
+        link: {
+          type?: ('reference' | 'custom') | null;
+          newTab?: boolean | null;
+          reference?: {
+            relationTo: 'pages';
+            value: number | Page;
+          } | null;
+          url?: string | null;
+          label: string;
+        };
+        id?: string | null;
+      }[]
+    | null;
+  phone?: string | null;
+  phoneLink?: string | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -1469,6 +1488,7 @@ export interface Footer {
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
+  logo?: T;
   navItems?:
     | T
     | {
@@ -1483,6 +1503,23 @@ export interface HeaderSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  socialLinks?:
+    | T
+    | {
+        image?: T;
+        link?:
+          | T
+          | {
+              type?: T;
+              newTab?: T;
+              reference?: T;
+              url?: T;
+              label?: T;
+            };
+        id?: T;
+      };
+  phone?: T;
+  phoneLink?: T;
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

@@ -19,7 +19,7 @@ const AboutSection: FC<Props> = ({section}) => {
   return (
     <section
       id="about"
-      className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-full main-container"
+      className="grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-full main-container main-wrapper"
     >
       <div className="lg:px-0 pb-10 lg:pb-0">
         <div className="relative w-full aspect-square overflow-hidden rounded-3xl px-10 lg:px-0">
@@ -50,8 +50,7 @@ const AboutSection: FC<Props> = ({section}) => {
         <div className="w-fit mx-auto lg:mx-0">
           <Button
             link={section.link.url || ''}
-            text={section.link.label || ''}
-          />
+          >{section.link.label || ''}</Button>
         </div>
       </div>
     </section>

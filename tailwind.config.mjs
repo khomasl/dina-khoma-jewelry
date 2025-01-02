@@ -53,6 +53,18 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        'violet': {
+          300: '#74538E',
+          400: '#74538E',
+          500: '#6A00A6'
+        },
+        'brown': '#603813',
+        'gray': {
+          50:  '#FEFEFE',
+          400: '#A49898',
+          800: '#120021',
+          900: '#011110'
+        },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',

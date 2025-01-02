@@ -42,14 +42,15 @@ const HeroSection: FC<Props> = ({section}) => {
           ) : null
         }
       </div>
-      <div className=" flex flex-col lg:items-start items-center justify-center lg:w-1/2 max-w-[650px] px-10 py-10 lg:px-20 lg:py-24 text-white">
+      <div className='main-wrapper'>
+      <div className="flex flex-col lg:items-start items-center justify-center lg:w-1/2 max-w-[650px] py-10 lg:py-24 text-white">
         <h1 className="text-3xl lg:text-5xl font-bold mb-8 text-center lg:text-left">{section.title}</h1>
         <h2 className="hidden lg:block text-xl mb-8">{section.description}</h2>
         <Button
           className="mx-auto w-fit lg:mx-0"
           link={section.link?.url || ''}
-          text={section.link?.label || ''}
-        />
+        >{section.link?.label || ''}</Button>
+      </div>
       </div>
     </section>
   );

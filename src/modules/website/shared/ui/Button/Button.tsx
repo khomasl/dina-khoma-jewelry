@@ -1,26 +1,24 @@
-import { FC } from "react";
+import {FC, PropsWithChildren} from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
-type Props = {
-  text?: string;
+type Props = PropsWithChildren & {
   link?: string;
   className?: string;
 }
 
-const Button: FC<Props> = ({text, link, className}) => {
+const Button: FC<Props> = ({children, link, className}) => {
   return (
-    <Link 
-      key={text}
+    <Link
       href={link || ''}
     >
-      <button 
+      <button
         className={clsx(
-          "bg-gray-400 rounded-lg py-4 px-8 font-bold text-center text-xl text-white hover:opacity-90 transition-all", 
+          "bg-gray-400 rounded-[8px] py-4 px-8 font-bold text-center text-xl text-white hover:opacity-90 transition-all",
           className
         )}
       >
-        {text}
+        {children}
       </button>
     </Link>
   )

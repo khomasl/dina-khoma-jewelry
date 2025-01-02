@@ -10,6 +10,11 @@ export const Header: GlobalConfig = {
   },
   fields: [
     {
+      name: 'logo',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
       name: 'navItems',
       type: 'array',
       fields: [
@@ -17,15 +22,40 @@ export const Header: GlobalConfig = {
           appearances: false,
         }),
       ],
-      maxRows: 6,
+      maxRows: 3,
       admin: {
         initCollapsed: true,
         components: {
-          RowLabel: '@/modules/admin/Header/RowLabel#RowLabel',
+          RowLabel: `${process.env.PAYLOAD_ROOT_DIR || '@/modules/admin'}/Header/RowLabel#RowLabel`,
         },
       },
     },
+    {
+      name: 'socialLinks',
+      type: 'array',
+      fields: [
+
+          {
+            name: 'image',
+            type: 'upload',
+            relationTo: 'media',
+          },
+          link({
+                 appearances: false,
+               }),
+      ],
+      maxRows: 3,
+    },
+    {
+      name: 'phone',
+      type: 'text',
+    },
+    {
+      name: 'phoneLink',
+      type: 'text',
+    }
   ],
+
   hooks: {
     afterChange: [revalidateHeader],
   },
