@@ -134,7 +134,7 @@ const CONTENT_HOMEPAGE = {
         title: "Про мене",
       },
       {
-        link: "/collection",
+        link: "/collections",
         title: "Мої вироби",
       },
       {
@@ -291,7 +291,7 @@ const CONTENT_HOMEPAGE = {
       nav: [
         { title: "Home", link: "/" },
         { title: "Про мене", link: "/pages/about" },
-        { title: "Мої вироби", link: "/collection" },
+        { title: "Мої вироби", link: "/collections" },
         { title: "Відгуки", link: "/#feedbacks" },
       ],
     },
