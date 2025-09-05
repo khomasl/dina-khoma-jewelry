@@ -12,6 +12,7 @@ This is a Dina Khoma site. Includes:
 - Geist font
 
 ## How to Use
+
 Clone
 
 ```bash
@@ -35,8 +36,10 @@ npm run dev
 ```
 
 ## Demo
-  - On Vercel  - https://dina-khoma-jewelry.vercel.app
-  - On Netlify - https://dina-khoma-jewelry.netlify.app
+
+- On Vercel - https://dina-khoma-jewelry.vercel.app
+- On Netlify - https://dina-khoma-jewelry.netlify.app
 
 ## Site
-  - https://dinakhoma.com
+
+- https://shop.dinakhoma.com
